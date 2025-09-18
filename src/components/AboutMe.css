@@ -1,0 +1,150 @@
+/* ---------- RESET SUAVE PARA EL BLOQUE ---------- */
+:root {
+  --accent: #C6B49B;
+  --text: #000;
+  --muted: #333;
+  --bg: #fafafa;
+}
+
+/* ---------- CONTENEDOR ---------- */
+/* Mobile-first: margen lateral fijo de 16px, sin padding lateral */
+.about-me-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 200px 16px;  /* ← 16px a izquierda y derecha en móvil */
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  /* Solo padding vertical en móvil (no afecta los 16px laterales) */
+  padding-block: clamp(16px, 12vw, 48px);
+  padding-inline: 0;
+
+  gap: clamp(18px, 2.5vw, 24px);
+}
+
+/* ---------- TITULAR (SALUDO + TEXTO) ---------- */
+#quote,
+.quote {
+  display: flex;              /* ahora es un contenedor flex */
+  flex-direction: column;     /* saludo arriba, texto abajo */
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0; /* se revela con GSAP */
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0;
+  font-size: clamp(2px, 6vw, 56px);
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  width: 90%;
+}
+
+/* ---------- SALUDO ---------- */
+.greeting-wrap {
+  display: block;       /* bloque, ocupa toda la línea encima */
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--accent);
+  font-size: 48px;
+  padding: 0 200px 48px 0;   /* espacio debajo del saludo */
+}
+
+.greeting-current {
+  display: inline-block;
+}
+
+/* ---------- BLOQUE DE DESCRIPCIÓN ---------- */
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(8px, 2vw, 14px);
+  max-width: 90%;
+  margin: 0;
+}
+
+.aboutme-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.4;
+  font-size: clamp(15px, 3.8vw, 18px);
+  flex-wrap: wrap;
+}
+
+.desc-icon {
+  width: clamp(18px, 5.5vw, 22px);
+  height: auto;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.desc-text {
+  opacity: 0; /* GSAP la revela */
+}
+
+/* ---------- TABLET / DESKTOP ---------- */
+@media (min-width: 600px) {
+  .about-me-container {
+    margin: 160px auto;
+    gap: 1.25rem;
+    max-width: 1200px;
+  }
+
+  .greeting-wrap {
+    font-size: 64px;
+    padding: 0 500px 64px 0;
+  }
+
+  #quote,
+  .quote {
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.1;
+    text-align: left; /* mejor que justify para títulos */
+  }
+
+  .aboutme-line {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+}
+
+@media (min-width: 900px) {
+
+    .greeting-wrap {
+    font-size: 64px;
+    padding: 0 1200px 64px 0;
+  }
+
+
+  #quote,
+  .quote {
+    font-size: clamp(44px, 4vw, 72px);
+  }
+
+  .aboutme-line {
+    font-size: clamp(17px, 1.6vw, 21px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .greeting-wrap {
+    font-size: 64px;
+    padding: 0 1600px 24px 0;}
+}
+
+/* ---------- MODO REDUCED MOTION (ACCESIBILIDAD) ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
