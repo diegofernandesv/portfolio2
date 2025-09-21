@@ -1,0 +1,119 @@
+import { useState } from "react";
+import AnimatedContent from "./AnimatedContent";
+import "./PortfolioGrid.css";
+
+function PortfolioGrid() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const filters = ["All", "UX/UI", "Coding", "Graphic Design", "Branding"];
+
+  const projects = [
+    {
+      id: 1,
+      title: "SpilCafeen - Figuring out what to play",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/d644e0bdf7def47c98433891c3b748d710a1ddbf?placeholderIfAbsent=true",
+      categories: ["UX/UI"],
+      isAbsolute: true
+    },
+    {
+      id: 2,
+      title: "Naturhistorisk Museum",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/e604f63990469168b2ff6fd62c4407ac1a4c5c7d?placeholderIfAbsent=true",
+      categories: ["UX/UI", "Coding"]
+    },
+    {
+      id: 3,
+      title: "Copenhagen Fashion Week",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/0eb41618f11099cc313b06a22fd2b487dc0fafaf?placeholderIfAbsent=true",
+      categories: ["UX/UI"]
+    },
+    {
+      id: 4,
+      title: "SpilCafeen Dashboard",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/f7a88dab7ec855a8d9d86599226389e271e7c6df?placeholderIfAbsent=true",
+      categories: ["Coding"]
+    },
+    {
+      id: 5,
+      title: "Laeso Kur",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/ad3090666f823ded1c90e162ce3600b5d4b09fcd?placeholderIfAbsent=true",
+      categories: ["Branding"]
+    },
+    {
+      id: 6,
+      title: "AllUNeed",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/7193ce62c7d2938b09084a3d9ba81b1632ec7e8d?placeholderIfAbsent=true",
+      categories: ["Coding"]
+    },
+    {
+      id: 7,
+      title: "Trailbound",
+      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/ad3090666f823ded1c90e162ce3600b5d4b09fcd?placeholderIfAbsent=true",
+      categories: ["Graphic Design"]
+    }
+  ];
+
+  const filteredProjects = activeFilter === "All" 
+    ? projects 
+    : projects.filter(project => 
+        project.categories.includes(activeFilter)
+      );
+
+  return (
+    <AnimatedContent>
+      <div className="portfolio-grid">
+        <div className="portfolio-header">
+          <h1 className="portfolio-title">Selected work</h1>
+          
+          <nav className="portfolio-filters">
+            {filters.map((filter) => (
+              <button
+                key={filter}
+                className={`portfolio-filter-button ${activeFilter === filter ? 'active' : ''}`}
+                onClick={() => setActiveFilter(filter)}
+              >
+                {filter}
+              </button>
+            ))}
+          </nav>
+        </div>
+
+        <AnimatedContent>
+          <div className="portfolio-projects-grid">
+            {filteredProjects.map((project) => (
+              <div key={project.id} className={`portfolio-project-card ${project.isAbsolute ? 'portfolio-project-card-absolute' : ''}`}>
+                <div className="portfolio-image-container">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="portfolio-project-image"
+                  />
+                  {project.isAbsolute && (
+                    <div className="portfolio-tag-absolute">
+                      {project.categories[0]}
+                    </div>
+                  )}
+                </div>
+                
+                <div className="portfolio-project-info">
+                  <h3 className="portfolio-project-title">{project.title}</h3>
+                  {!project.isAbsolute && (
+                    <div className="portfolio-project-tags">
+                      {project.categories.map((category, index) => (
+                        <span key={index} className="portfolio-project-tag">
+                          {category}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </AnimatedContent>
+      </div>
+    </AnimatedContent>
+  );
+}
+
+export default PortfolioGrid;

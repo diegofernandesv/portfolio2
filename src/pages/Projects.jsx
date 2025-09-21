@@ -1,11 +1,11 @@
 import Header from "../components/Header";
-import SelectedWork from "../components/SelectedWork";
+import PortfolioGrid from "../components/PortfolioGrid";
 
 function Projects() {
   return (
     <>
       <Header />
-      <SelectedWork />
+      <PortfolioGrid />
     </>
   );
 }

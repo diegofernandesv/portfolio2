@@ -1,4 +1,3 @@
-
 import AnimatedContent from "./AnimatedContent";
 import "./SelectedWork.css";
 import StarBorder from "./StarBorder";
