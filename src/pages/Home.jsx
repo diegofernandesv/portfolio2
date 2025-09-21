@@ -3,6 +3,9 @@ import Hero from "../components/Hero";
 import AboutMe from "../components/AboutMe";
 import SelectedWork from "../components/SelectedWork";
 import ScrollStack, { ScrollStackItem } from "../components/ScrollStack";
+import { HowIWorkSection } from "../components/HowIWorkSection";
+import LifeSection from "../components/LifeSection";
+import Footer from "../components/Footer";
 
 function Home() {
     const [showAboutMe, setShowAboutMe] = useState(false);
@@ -38,6 +41,9 @@ function Home() {
                 <div className="after-hero" style={{ marginTop: 0, width: '100%' }}>
                     <AboutMe />
                     <SelectedWork />
+                    <HowIWorkSection />
+                    <LifeSection />
+                    <Footer />
                 </div>
             )}
         </>
