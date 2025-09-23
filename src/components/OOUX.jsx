@@ -3,7 +3,7 @@ import AnimatedContent from './AnimatedContent';
 
 function OOUX() {
   return (
-    <AnimatedContent>
+    
       <div className="ooux-section">
         <div className="ooux-content">
           <div className="ooux-text">
@@ -23,7 +23,7 @@ function OOUX() {
           />
         </div>
       </div>
-    </AnimatedContent>
+  
   );
 }
 

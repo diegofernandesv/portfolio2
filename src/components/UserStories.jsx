@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function UserStories() {
   return (
-    <AnimatedContent>
       <div className="user-stories-section">
         <div className="user-stories-image">
           <img
@@ -23,7 +22,6 @@ function UserStories() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function UserFlow() {
   return (
-    <AnimatedContent>
       <div className="user-flow-section">
         <div className="user-flow-content">
           <div className="user-flow-text">
@@ -23,7 +22,6 @@ function UserFlow() {
           />
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

@@ -3,7 +3,7 @@ import AnimatedContent from './AnimatedContent';
 
 function LoFi() {
   return (
-    <AnimatedContent>
+
       <div className="lofi-section">
         <div className="lofi-header">
           <div className="lofi-title">
@@ -22,7 +22,6 @@ function LoFi() {
           className="lofi-image"
         />
       </div>
-    </AnimatedContent>
   );
 }
 

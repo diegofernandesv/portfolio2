@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function DevelopSection() {
   return (
-    <AnimatedContent>
       <div className="develop-section">
         <div className="develop-description">
           [Develop] In this phase, we transformed our research insights into
@@ -39,7 +38,6 @@ function DevelopSection() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

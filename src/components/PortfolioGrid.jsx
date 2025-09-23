@@ -25,7 +25,7 @@ function PortfolioGrid() {
     },
     {
       id: 2,
-      title: "Naturhistorisk Museum - Elevating the visitor experience",
+      title: "The Spotlight – Increasing Visitor Engagement Through Digital Interaction",
       image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/e604f63990469168b2ff6fd62c4407ac1a4c5c7d?placeholderIfAbsent=true",
       categories: ["UX/UI"]
     },

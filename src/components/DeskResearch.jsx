@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function DeskResearch() {
   return (
-    <AnimatedContent>
       <div className="desk-research-section">
         <div className="desk-research-content">
           <div className="desk-research-title">
@@ -27,7 +26,6 @@ function DeskResearch() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

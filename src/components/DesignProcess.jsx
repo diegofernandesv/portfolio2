@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function DesignProcess() {
   return (
-    <AnimatedContent>
       <div className="design-process-section">
         <div className="design-process-image">
           <img
@@ -26,7 +25,6 @@ function DesignProcess() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

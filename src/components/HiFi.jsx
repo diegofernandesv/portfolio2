@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function HiFi() {
   return (
-    <AnimatedContent>
       <div className="hifi-section">
         <div className="hifi-container">
           <div className="hifi-header">
@@ -54,7 +53,6 @@ function HiFi() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

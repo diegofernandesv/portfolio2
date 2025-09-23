@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function CardSortingTest() {
   return (
-    <AnimatedContent>
       <div className="card-sorting-section">
         <div className="card-sorting-content">
           <div className="card-sorting-text">
@@ -23,7 +22,6 @@ function CardSortingTest() {
           />
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function UserStoryMap() {
   return (
-    <AnimatedContent>
       <div className="user-story-map-section">
         <div className="user-story-map-content">
           <div className="user-story-map-text">
@@ -23,7 +22,6 @@ function UserStoryMap() {
           />
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

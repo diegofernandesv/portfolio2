@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function DesignSystem() {
   return (
-    <AnimatedContent>
       <div className="design-system-section">
         <div className="design-system-header">
           <div className="design-system-title">
@@ -32,7 +31,6 @@ function DesignSystem() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

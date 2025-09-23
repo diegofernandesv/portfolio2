@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function Mascot() {
   return (
-    <AnimatedContent>
       <div className="mascot-section">
         <div className="mascot-content">
           <div className="mascot-header">
@@ -39,7 +38,6 @@ function Mascot() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

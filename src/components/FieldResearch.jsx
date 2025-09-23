@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function FieldResearch() {
   return (
-    <AnimatedContent>
       <div className="field-research-section">
         <div className="field-research-content">
           <div className="field-research-text">
@@ -26,7 +25,6 @@ function FieldResearch() {
           />
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 
