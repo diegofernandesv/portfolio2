@@ -258,7 +258,7 @@ body.scrollable { overflow-y: auto !important; }
   z-index: 50;
   font-size: 1.2rem;
   letter-spacing: -0.02em;
-  color: white;
+  color: #000; /* default for larger devices */
   transform: translateY(100%);
 }
 .coordinates { font-weight: 500; opacity: 0.8; }
@@ -307,12 +307,13 @@ body.scrollable { overflow-y: auto !important; }
   }
   .footer {
 position: absolute;
-bottom: -24px; left: 0;
+bottom: 16px; left: 0;
 width: 100%;
 padding: 1rem;
 display: flex; justify-content: center; align-items: center;
 font-size: 1rem;
 z-index: 50;
+color:white;
 transform: translateY(100%); /* GSAP animates this to 0 */
   }
   .title-line { height: 18rem; }
@@ -329,6 +330,7 @@ transform: translateY(100%); /* GSAP animates this to 0 */
   .coordinates{
     margin-top: -32rem;
     font-size: 6rem;
+    color: #fff;
   }
 }
   

@@ -374,14 +374,14 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
       <footer className="footer">
         <div
           className="coordinates"
-          style={{ cursor: "pointer", color: "#000", display: "flex", alignItems: "center", gap: 8 }}
+          style={{ cursor: "pointer", display: "flex", alignItems: "center", gap: 8 }}
           onClick={() => {
             const nextSection = document.querySelector(".after-hero");
             if (nextSection) nextSection.scrollIntoView({ behavior: "smooth" });
           }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ verticalAlign: "middle" }}>
-            <path d="M12 16V4M12 16L7 11M12 16L17 11" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 16V4M12 16L7 11M12 16L17 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           <span>Scroll Down</span>
         </div>
