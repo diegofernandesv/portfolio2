@@ -86,6 +86,25 @@
   transform: scale(1.02);
 }
 
+/* Overlay tag styles (match PortfolioGrid) */
+.portfolio-image-container { position: relative; width: 100%; }
+.portfolio-tag-absolute {
+  position: absolute;
+  bottom: clamp(20px, 8vw, 20px);
+  right: clamp(16px, 4vw, 31px);
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: clamp(12px, 3vw, 24px);
+  padding: clamp(8px, 2vw, 10px) clamp(12px, 3vw, 16px);
+  font-size: clamp(12px, 3vw, 20px);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .project-info {
   display: flex;
   margin-top: clamp(12px, 3vw, 22px);
@@ -184,6 +203,10 @@
   .selected-work-header {
     flex-direction: row;
     align-items: flex-end;
+  }
+
+  .project-tags {
+    max-width: 40%;
   }
 
   .selected-work-container {
