@@ -9,6 +9,8 @@ function SelectedWork() {
   const handleProjectClick = (projectName) => {
     if (projectName === "SpilCafeen") {
       navigate("/spilcafeen");
+    } else if (projectName === "Naturhistorisk Museum") {
+      navigate("/naturhistorisk-museum");
     }
   };
 
@@ -39,7 +41,7 @@ function SelectedWork() {
           </div>
         </div>
 
-        <div className="project-card">
+        <div className="project-card" onClick={() => handleProjectClick("Naturhistorisk Museum")}>
           <div className="portfolio-image-container">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/e604f63990469168b2ff6fd62c4407ac1a4c5c7d?placeholderIfAbsent=true"

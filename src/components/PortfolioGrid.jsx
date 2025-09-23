@@ -10,6 +10,8 @@ function PortfolioGrid() {
   const handleProjectClick = (projectTitle) => {
     if (projectTitle.includes("SpilCafeen")) {
       navigate("/spilcafeen");
+    } else if (projectTitle.includes("The Spotlight") || projectTitle.includes("Naturhistorisk")) {
+      navigate("/naturhistorisk-museum");
     }
   };
 

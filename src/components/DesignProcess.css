@@ -1,6 +1,6 @@
 .design-process-section {
 display: flex;
-width: 100;
+width: 100%;
 justify-content: space-between;
 align-items: center;
 }
@@ -51,7 +51,8 @@ flex-shrink: 0;
 /* Responsive styles */
 @media (max-width: 991px) {
   .design-process-section {
-    flex-direction: column;
+    /* Show text (content) first, then the image */
+    flex-direction: column-reverse;
   }
 
   .process-image { max-width: 100%; height: auto; }
@@ -60,6 +61,7 @@ flex-shrink: 0;
     max-width: 100%;
     padding: 40px 20px 60px;
     width: 100%;
+    margin-bottom: 20px; /* spacing between text and image when stacked */
   }
 
   .design-process-title {

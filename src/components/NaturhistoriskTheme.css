@@ -1,0 +1,50 @@
+/* Black and White Theme for Naturhistorisk Museum */
+.naturhistorisk-museum-theme {
+  --primary-color: rgba(0, 0, 0, 1);
+  --secondary-color: rgba(255, 255, 255, 1);
+  --accent-color: rgb(226, 226, 226);
+  --text-light: rgba(255, 255, 255, 1);
+  --text-dark: rgba(0, 0, 0, 1);
+  --border-color: rgba(0, 0, 0, 1);
+}
+
+/* Override design process background for black theme */
+.naturhistorisk-museum-theme .design-process-content {
+  background-color: var(--primary-color);
+}
+
+.naturhistorisk-museum-theme .design-process-title {
+  color: var(--secondary-color);
+}
+
+.naturhistorisk-museum-theme .design-process-description {
+  color: var(--accent-color);
+}
+
+/* Override other project title color */
+.naturhistorisk-museum-theme .other-projects-title {
+  color: var(--accent-color);
+}
+
+/* Override section titles */
+.naturhistorisk-museum-theme .section-title,
+.naturhistorisk-museum-theme .intro-title,
+.naturhistorisk-museum-theme .field-research-title,
+.naturhistorisk-museum-theme .desk-research-title {
+  color: var(--accent-color);
+}
+
+/* Override tag borders */
+.naturhistorisk-museum-theme .project-tag {
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+}
+
+/* Override any red backgrounds or colors to black/white */
+.naturhistorisk-museum-theme .section-background {
+  background-color: var(--primary-color);
+}
+
+.naturhistorisk-museum-theme .content-wrapper {
+  background-color: var(--secondary-color);
+}

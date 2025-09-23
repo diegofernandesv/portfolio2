@@ -1,7 +1,19 @@
 import './DeskResearch.css';
 import AnimatedContent from './AnimatedContent';
 
-function DeskResearch() {
+function DeskResearch({ content, additionalContent }) {
+  const defaultContent = `Through our desk research, we analyzed reports, forums, and
+applied netnography to understand Spilcaféen's target audience. We
+found that the core users are young adults (18–34), both men and
+women, including students, young professionals, and families,
+within an international and multicultural environment.`;
+
+  const defaultAdditionalContent = `By reviewing community discussions, we uncovered key psychographic
+insights, such as the value users place on social interaction, fun,
+and technology detox. Altogether, this research highlighted the
+importance of designing a fast and intuitive way to find games,
+while supporting the social and relaxed environment that users seek.`;
+
   return (
       <div className="desk-research-section">
         <div className="desk-research-content">
@@ -9,20 +21,12 @@ function DeskResearch() {
             Desk Research
           </div>
           <div className="desk-research-description">
-            Through our desk research, we analyzed reports, forums, and
-            applied netnography to understand Spilcaféen's target audience. We
-            found that the core users are young adults (18–34), both men and
-            women, including students, young professionals, and families,
-            within an international and multicultural environment.
+            {content || defaultContent}
           </div>
         </div>
         <div className="desk-research-additional">
           <div className="desk-research-additional-text">
-            By reviewing community discussions, we uncovered key psychographic
-            insights, such as the value users place on social interaction, fun,
-            and technology detox. Altogether, this research highlighted the
-            importance of designing a fast and intuitive way to find games,
-            while supporting the social and relaxed environment that users seek.
+            {additionalContent || defaultAdditionalContent}
           </div>
         </div>
       </div>

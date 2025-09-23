@@ -2,7 +2,8 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 21px;
+  justify-content: space-between;
+  gap: 0;
 }
 
 .user-stories-image {
@@ -15,6 +16,7 @@
   width: 100%;
   height: 403px;
   object-fit: cover;
+  border-radius: 64px 0 0 0; /* mirror Design Process */
 }
 
 .user-stories-content {
@@ -27,6 +29,7 @@
   height: 403px;
   padding: 72px 64px;
   box-sizing: border-box;
+  border-radius: 0 64px 0 0;
 }
 
 .user-stories-text {
@@ -57,7 +60,8 @@
 /* Responsive styles */
 @media (max-width: 991px) {
   .user-stories-section {
-    flex-direction: column;
+    /* text first, then image */
+    flex-direction: column-reverse;
     gap: 0;
   }
 
@@ -68,6 +72,7 @@
   .stories-image {
     max-width: 100%;
     height: auto;
+    border-radius: 32px;
   }
 
   .user-stories-content {
@@ -75,6 +80,8 @@
     height: auto;
     min-height: 300px;
     padding: 40px 20px 60px;
+    border-radius: 32px;
+    margin-bottom: 20px;
   }
 
   .user-stories-title {

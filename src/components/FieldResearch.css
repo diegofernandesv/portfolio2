@@ -1,17 +1,20 @@
 .field-research-section {
-display: inline-flex;
-align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .field-research-content {
   background-color: rgba(190, 16, 41, 1);
+  border-radius: 64px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   min-width: 320px;
   width: 746px;
-  height: 430px;
+  height: 423px;
   padding: 72px 64px 102px;
   
 }
@@ -41,7 +44,7 @@ align-items: center;
 .field-research-image {
   flex: 1;
   display: flex; /* allow img to stretch to full height */
-  height: 430px;
+  height: 423px;
   
 }
 
@@ -51,6 +54,7 @@ align-items: center;
   max-width: 766px;
   object-fit: cover;
   object-position: center;
+  border-radius: 0 64px 0 0;
 }
 
 /* Responsive styles */
@@ -63,16 +67,20 @@ align-items: center;
     max-width: 100%;
     width: 100%;
     padding: 40px 20px 60px;
+    height: auto;
+    border-radius: 32px;
   }
 
   .field-research-title {
     max-width: 100%;
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .field-research-description {
     max-width: 100%;
+    font-size: 18px;
   }
 
-  .research-image { max-width: 100%; height: auto; }
+  .field-research-image { height: auto; }
+  .research-image { max-width: 100%; height: auto; border-radius: 32px; }
 }

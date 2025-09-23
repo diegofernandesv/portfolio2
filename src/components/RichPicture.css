@@ -60,7 +60,8 @@
 /* Responsive styles */
 @media (max-width: 991px) {
   .rich-picture-section {
-    flex-direction: column;
+    /* show text first, then image */
+    flex-direction: column-reverse;
   }
 
   .rich-picture-image {
@@ -70,6 +71,7 @@
   .picture-image {
     max-width: 100%;
     height: auto;
+    border-radius: 32px;
   }
 
   .rich-picture-content {
@@ -77,6 +79,8 @@
     height: auto;
     min-height: 300px;
     padding: 40px 20px 60px;
+    border-radius: 32px;
+    margin-bottom: 20px;
   }
 
   .rich-picture-title {

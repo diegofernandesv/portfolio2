@@ -22,10 +22,22 @@
   flex-wrap: wrap;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-card-link:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+
 .project-card {
   min-width: 240px;
   width: 670px;
   flex: 1;
+  cursor: pointer;
 }
 
 .project-image {
@@ -33,38 +45,16 @@
   object-fit: contain;
   object-position: center;
   width: 100%;
-  border-radius: clamp(12px, 3vw, 24px);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image { transform: scale(1.02); }
-
-/* Overlay tag styles (matching PortfolioGrid) */
-.portfolio-image-container { position: relative; width: 100%; }
-.portfolio-tag-absolute {
-  position: absolute;
-  bottom: clamp(20px, 8vw, 20px);
-  right: clamp(16px, 4vw, 31px);
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: clamp(12px, 3vw, 24px);
-  padding: clamp(8px, 2vw, 10px) clamp(12px, 3vw, 16px);
-  font-size: clamp(12px, 3vw, 20px);
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  z-index: 1;
+  border-radius: 24px;
 }
 
 .project-info {
   display: flex;
-  margin-top: clamp(11px, 3vw, 22px);
+  margin-top: 22px;
   width: 100%;
   align-items: center;
-  gap: clamp(12px, 3vw, 32px);
-  justify-content: space-between;
+  gap: 125px;
+  justify-content: start;
   flex-wrap: wrap;
 }
 
@@ -80,8 +70,16 @@
   margin: auto 0;
 }
 
-/* Legacy tags row hidden (overlay used instead) */
-.project-tags { display: none; }
+.project-tags {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 20px;
+  font-weight: 400;
+  white-space: nowrap;
+  justify-content: start;
+  margin: auto 0;
+}
 
 .project-tag {
   border-radius: 24px;
@@ -153,7 +151,7 @@
   }
 
   .project-tags {
-    width: 80%;
+    width: 100%;
   }
 
   .project-tag {

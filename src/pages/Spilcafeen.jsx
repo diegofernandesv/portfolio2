@@ -18,6 +18,8 @@ import DevelopSection from "../components/DevelopSection";
 import TakeAways from "../components/TakeAways";
 import OtherProjects from "../components/OtherProjects";
 import Footer from "../components/Footer";
+import StarBorder from "../components/StarBorder";
+import "./spilcafeen.css";
 
 function Spilcafeen() {
   return (
@@ -48,6 +50,16 @@ function Spilcafeen() {
       <TakeAways />
       <OtherProjects />
       <Footer />
+      <StarBorder
+        as="button"
+        className="go-top-fixed"
+        onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+        aria-label="Go to top"
+        title="Go to the top"
+        style={{ padding: 0 }}
+      >
+        Go to the top
+      </StarBorder>
     </>
   );
 }

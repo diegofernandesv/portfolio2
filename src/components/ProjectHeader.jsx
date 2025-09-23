@@ -9,6 +9,19 @@ function ProjectHeader({ title, backgroundImage, duration, team, date }) {
     navigate('/projects');
   };
 
+  // Render title with a line break after a dash/en dash if present
+  let renderedTitle = title;
+  if (typeof title === 'string') {
+    const m = title.match(/^(.*?\s[-–])\s*(.*)$/);
+    if (m && m[2]) {
+      renderedTitle = (
+        <>
+          {m[1].trim()}<br />{m[2]}
+        </>
+      );
+    }
+  }
+
   return (
     <AnimatedContent>
     <div className="project-header">
@@ -23,7 +36,7 @@ function ProjectHeader({ title, backgroundImage, duration, team, date }) {
         </button>
         <div className="project-header-bottom">
           <div className="project-title">
-            {title}
+            {renderedTitle}
           </div>
           <div className="project-details-card">
             <div className="project-details-list">
