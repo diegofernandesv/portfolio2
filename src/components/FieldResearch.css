@@ -7,7 +7,7 @@
 
 .field-research-content {
   background-color: rgba(190, 16, 41, 1);
-  border-radius: 64px 0 0 0;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +54,6 @@
   max-width: 766px;
   object-fit: cover;
   object-position: center;
-  border-radius: 0 64px 0 0;
 }
 
 /* Responsive styles */
@@ -68,7 +67,6 @@
     width: 100%;
     padding: 40px 20px 60px;
     height: auto;
-    border-radius: 32px;
   }
 
   .field-research-title {

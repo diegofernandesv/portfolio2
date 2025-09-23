@@ -1,0 +1,143 @@
+.toggle-section {
+  margin: 0px 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.toggle-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #C6B49B;
+}
+
+.toggle-header:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.toggle-header.open {
+  background: rgba(128, 128, 128, 0.05);
+}
+
+.toggle-title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #C6B49B;
+  margin: 0;
+  text-align: left;
+}
+
+.toggle-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon-line {
+  position: absolute;
+  background-color: rgba(128, 128, 128, 1);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.toggle-icon-line.horizontal {
+  width: 16px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toggle-icon-line.vertical {
+  width: 2px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-icon.open .toggle-icon-line.vertical {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.toggle-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.toggle-content.open {
+  max-height: 10000px;
+}
+
+.toggle-content-inner {
+  padding: 0;
+}
+
+/* Black and white theme overrides */
+.naturhistorisk-museum-theme .toggle-section {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.naturhistorisk-museum-theme .toggle-header {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.naturhistorisk-museum-theme .toggle-header:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.naturhistorisk-museum-theme .toggle-header.open {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.naturhistorisk-museum-theme .toggle-title {
+  color: rgba(0, 0, 0, 1);
+}
+
+.naturhistorisk-museum-theme .toggle-icon-line {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .toggle-header {
+    padding: 20px 24px;
+  }
+
+  .toggle-title {
+    font-size: 32px;
+  }
+
+  .toggle-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .toggle-icon-line.horizontal {
+    width: 14px;
+  }
+
+  .toggle-icon-line.vertical {
+    height: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .toggle-header {
+    padding: 16px 20px;
+  }
+
+  .toggle-title {
+    font-size: 24px;
+  }
+}

@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function Persona() {
   return (
-    <AnimatedContent>
       <div className="persona-section">
         <div className="persona-container">
           <div className="persona-description">
@@ -27,7 +26,6 @@ function Persona() {
           className="persona-image"
         />
       </div>
-    </AnimatedContent>
   );
 }
 

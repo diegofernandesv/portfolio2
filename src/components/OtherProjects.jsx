@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 function OtherProjects() {
   return (
-    <AnimatedContent>
       <div className="other-projects-section">
         <div className="other-projects-title">
           Other Projects
@@ -40,7 +39,6 @@ function OtherProjects() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

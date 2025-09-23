@@ -17,7 +17,7 @@ import Mascot from "../components/Mascot";
 import DevelopSection from "../components/DevelopSection";
 import TakeAways from "../components/TakeAways";
 import OtherProjects from "../components/OtherProjects";
-import Footer from "../components/Footer";
+import ToggleSection from "../components/ToggleSection";
 import StarBorder from "../components/StarBorder";
 import "./spilcafeen.css";
 
@@ -33,28 +33,42 @@ function Spilcafeen() {
       />
       <IntroSection />
       <DesignProcess />
-      <FieldResearch />
-      <DeskResearch />
-      <Persona />
-      <RichPicture />
-      <OOUX />
-      <UserStories />
-      <UserStoryMap />
-      <UserFlow />
-      <CardSortingTest />
-      <DevelopSection />
-      <Mascot />
-      <LoFi />
-      <DesignSystem />
-      <HiFi />
+
+      <ToggleSection title="Discover" defaultOpen={true}>
+      
+        <FieldResearch />
+        <DeskResearch />
+      </ToggleSection>
+
+      <ToggleSection title="Define">
+        <Persona />
+        <RichPicture />
+        <OOUX />
+        <UserStories />
+        <UserStoryMap />
+        <UserFlow />
+        <CardSortingTest />
+      </ToggleSection>
+
+      <ToggleSection title="Develop">
+        <DevelopSection />
+        <Mascot />
+        <LoFi />
+        <DesignSystem />
+        
+      </ToggleSection>
+
+      <ToggleSection title="Deliver">
+       <HiFi />
+      </ToggleSection>
+
       <TakeAways />
       <OtherProjects />
-      <Footer />
       <StarBorder
         as="button"
         className="go-top-fixed"
         onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
-        aria-label="Go to top"
+        aria-label="Go to the top"
         title="Go to the top"
         style={{ padding: 0 }}
       >

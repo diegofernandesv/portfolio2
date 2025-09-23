@@ -4,7 +4,6 @@ import AnimatedContent from "./AnimatedContent";
 
 function TakeAways() {
   return (
-    <AnimatedContent>
     <div className="takeaways-container">
       <div className="takeaways-content">
         <div className="takeaways-section">
@@ -36,7 +35,6 @@ function TakeAways() {
         </div>
       </div>
     </div>
-    </AnimatedContent>
   );
 }
 
