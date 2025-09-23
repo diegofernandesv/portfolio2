@@ -1,0 +1,138 @@
+.exhibition-booths-section {
+  width: 100%;
+  max-width: 1403px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.booths-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 59px;
+  width: 100%;
+}
+
+.booths-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 74px;
+  width: 100%;
+}
+
+.booth-content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
+  width: 100%;
+}
+
+.booth-main-image {
+  width: 100%;
+  height: auto;
+  max-height: 703px;
+  object-fit: cover;
+  aspect-ratio: 1403/703;
+}
+
+.booth-description,
+.values-description {
+  max-width: 908px;
+  color: #000;
+  font: 400 24px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.booth-values-block {
+  display: flex;
+  width: 100%;
+  max-width: 1348px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.values-image {
+  width: 100%;
+  height: auto;
+  max-height: 588px;
+  object-fit: cover;
+  aspect-ratio: 337/147;
+}
+
+.booth-gallery-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 20px;
+}
+
+.gallery-wide-image {
+  width: 100%;
+  height: auto;
+  max-height: 427px;
+  object-fit: cover;
+  aspect-ratio: 23/7;
+}
+
+.gallery-detail-image {
+  width: 100%;
+  max-width: 1389px;
+  height: auto;
+  max-height: 254px;
+  object-fit: cover;
+}
+
+/* Theme overrides for naturhistorisk museum */
+.naturhistorisk-museum-theme .booth-description,
+.naturhistorisk-museum-theme .values-description {
+  color: var(--text-dark);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .exhibition-booths-section {
+    padding: 15px;
+  }
+  
+  .booths-content-wrapper {
+    gap: 40px;
+  }
+  
+  .booths-section {
+    gap: 50px;
+  }
+  
+  .booth-content-block {
+    gap: 30px;
+  }
+  
+  .booth-values-block {
+    gap: 40px;
+  }
+  
+  .booth-description,
+  .values-description {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+
+@media (max-width: 480px) {
+  .exhibition-booths-section {
+    padding: 10px;
+  }
+  
+  .booths-content-wrapper {
+    gap: 30px;
+  }
+  
+  .booth-description,
+  .values-description {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}

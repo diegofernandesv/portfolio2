@@ -1,0 +1,162 @@
+.concept-experience-section {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.concept-content-wrapper {
+  align-self: end;
+  max-width: 1369px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.concept-title {
+  color: rgba(198, 180, 155, 1);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.concept-description {
+  margin-top: 38px;
+  width: 100%;
+}
+
+.concept-intro-text {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+}
+
+.concept-main-content {
+  display: flex;
+  margin-top: 48px;
+  width: 100%;
+  align-items: center;
+  gap: 28px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.concept-text-content {
+  align-self: stretch;
+  flex: 1 1 611px;
+  min-width: 300px;
+  margin: auto 0;
+}
+
+.concept-text-content p {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+}
+
+.concept-image-wrapper {
+  flex: 1 1 486px;
+  min-width: 240px;
+  margin: auto 0;
+}
+
+.concept-main-image {
+  aspect-ratio: 1.34;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 24px;
+  align-self: stretch;
+}
+
+.concept-gallery-section {
+  margin-top: 38px;
+  width: 100%;
+}
+
+.concept-image-gallery {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  aspect-ratio: 0.7;
+  object-fit: contain;
+  object-position: center;
+  width: 273px;
+  border-radius: 24px;
+  align-self: stretch;
+  min-width: 240px;
+  flex: 1 1 0;
+  margin: auto 0;
+}
+
+.concept-conclusion-text {
+  color: rgba(0, 0, 0, 1);
+  margin-top: 37px;
+  font: 400 24px/29px 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.concept-final-images {
+  display: flex;
+  margin-top: 46px;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+.final-image-mobile {
+  aspect-ratio: 0.56;
+  object-fit: contain;
+  object-position: center;
+  width: 293px;
+  align-self: stretch;
+  min-width: 240px;
+  flex-shrink: 0;
+  margin: auto 0;
+}
+
+.final-image-desktop {
+  aspect-ratio: 1.78;
+  object-fit: contain;
+  object-position: center;
+  width: 924px;
+  align-self: stretch;
+  min-width: 240px;
+  margin: auto 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 991px) {
+  .concept-title {
+    font-size: 40px;
+  }
+  
+  .concept-main-content {
+    margin-top: 40px;
+  }
+  
+  .concept-final-images {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  
+  .final-image-desktop {
+    max-width: 100%;
+  }
+}

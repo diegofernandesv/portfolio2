@@ -1,0 +1,76 @@
+.lofi-to-hifi-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 10px 64px;
+}
+
+.lofi-to-hifi-content {
+  width: 100%;
+  margin-bottom: 71px;
+}
+
+.lofi-to-hifi-title {
+  color: rgba(198, 180, 155, 1);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 46px;
+}
+
+.lofi-to-hifi-description {
+  color: rgba(0, 0, 0, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.lofi-to-hifi-image {
+  aspect-ratio: 0.73;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .lofi-to-hifi-section {
+    padding: 10px 32px;
+  }
+
+  .lofi-to-hifi-content {
+    margin-bottom: 40px;
+  }
+
+  .lofi-to-hifi-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .lofi-to-hifi-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .lofi-to-hifi-section {
+    padding: 10px 20px;
+  }
+
+  .lofi-to-hifi-content {
+    margin-bottom: 32px;
+  }
+
+  .lofi-to-hifi-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .lofi-to-hifi-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
