@@ -114,7 +114,6 @@ body.scrollable { overflow-y: auto !important; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40px; height: 40px;
   margin-left: 1.5rem;
   z-index: 120;
   position: relative;
@@ -127,6 +126,7 @@ body.scrollable { overflow-y: auto !important; }
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(.4,2,.6,1);
 }
+.burger.open .burger-bar { background: #C6B49B; }
 
 /* Mobile nav overlay */
 .mobile-nav {
@@ -142,8 +142,21 @@ body.scrollable { overflow-y: auto !important; }
   opacity: 0;
   pointer-events: none;
 }
+.close-nav {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 40px; height: 40px;
+  display: grid; place-items: center;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.close-nav:hover { background: rgba(255,255,255,0.12); }
+.close-nav:focus-visible { outline: 2px solid #C6B49B; outline-offset: 3px; }
 .mobile-nav .nav-link {
-  font-size: 2.2rem; color: white; font-weight: 700;
+  font-size: clamp(22px, 6.5vw, 36px); color: white; font-weight: 700;
   text-decoration: none; letter-spacing: -0.02em;
   transition: color 0.2s;
 }
@@ -280,7 +293,10 @@ body.scrollable { overflow-y: auto !important; }
   .header-inner { padding: 0 1rem; }
   .preloader-container { width: 90vw; height: 50vw; }
   .big-title { font-size: clamp(36px, 9vw, 4rem); left: 2rem; }
-  .mobile-nav .nav-link { font-size: 1.8rem; }
+  /* Tighter header container around burger on tablets */
+  .header-right { padding: 16px 16px; }
+  /* Slightly smaller bars, less vertical spacing */
+  .burger-bar { width: 24px; height: 3px; margin: 3px 0; }
   .header-left { font-size: 24px; left: 24px; }
 }
 @media (max-width: 480px) {
@@ -289,9 +305,10 @@ body.scrollable { overflow-y: auto !important; }
   .title-line { height: 18rem; }
   .header-inner { width: 90%; }
   .header-left { font-size: 16px; left: 16px; }
-  .burger { width: 36px; height: 36px; }
-  .burger-bar { width: 24px; }
-  .mobile-nav .nav-link { font-size: 1.5rem; }
+  /* Even tighter container and bars on phones */
+  .header-right { padding: 8px 10px; }
+  .burger { width: 32px; height: 32px; }
+  .burger-bar { width: 20px; height: 2px; margin: 2.5px 0; }
   .big-title {
   position: absolute;
   bottom: 32rem;}
