@@ -1,0 +1,137 @@
+.develop-section {
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 120px;
+}
+
+.develop-description {
+  color: rgba(169, 169, 169, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 65px;
+  max-width: 700px;
+}
+
+.develop-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 20px;
+  color: rgba(198, 180, 155, 1);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.develop-top-row {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 23px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sketch-container {
+  min-width: 240px;
+  width: 407px;
+}
+
+.content-title {
+  margin-bottom: 22px;
+}
+
+.sketch-image {
+  aspect-ratio: 0.7;
+  object-fit: contain;
+  object-position: center;
+  width: 363px;
+  border-radius: 24px;
+  max-width: 100%;
+}
+
+.moodboard-container {
+  border-radius: 24px;
+  min-width: 240px;
+  white-space: nowrap;
+  width: 954px;
+}
+
+.moodboard-image {
+  aspect-ratio: 1.81;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 32px;
+  margin-top: 16px;
+}
+
+.inspiration-container {
+  align-self: center;
+  margin-top: 23px;
+  width: 703px;
+  max-width: 100%;
+}
+
+.inspiration-image {
+  aspect-ratio: 1.66;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 24px;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .develop-description {
+    margin-bottom: 40px;
+  }
+  
+  .develop-top-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .sketch-container,
+  .moodboard-container {
+    width: 100%;
+    min-width: unset;
+  }
+  
+  .moodboard-container {
+    white-space: initial;
+  }
+  
+  .sketch-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .develop-section {
+    padding: 0 15px;
+  }
+  
+  .develop-description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .content-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .sketch-image,
+  .moodboard-image,
+  .inspiration-image {
+    border-radius: 16px;
+  }
+  
+  .moodboard-image {
+    border-radius: 20px;
+  }
+}

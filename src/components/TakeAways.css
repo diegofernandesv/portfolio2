@@ -1,0 +1,115 @@
+:root {
+  --accent: #C6B49B;
+  --text: #000;
+  --bg: #fafafa;
+}
+
+.takeaways-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 68px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 120px;
+}
+
+.takeaways-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 68px;
+  width: 100%;
+}
+
+.takeaways-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 31px;
+  width: 100%;
+}
+
+.takeaways-title {
+  color: var(--accent);
+  font: 400 64px Aspekta, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 120%;
+}
+
+.takeaways-text {
+  color: var(--text);
+  font: 400 24px Aspekta, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 120%;
+}
+
+.prototype-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  width: 100%;
+}
+
+.prototype-title {
+  color: var(--accent);
+  font: 400 64px Aspekta, -apple-system, Roboto, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 120%;
+}
+
+.prototype-button {
+  display: flex;
+  padding: 21px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: var(--accent);
+  color: var(--text);
+  font: 400 16px Aspekta, -apple-system, Roboto, Helvetica, sans-serif;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.prototype-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .takeaways-title,
+  .prototype-title {
+    font-size: 48px !important;
+  }
+  
+  .prototype-button {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .takeaways-container {
+    padding: 20px;
+    gap: 48px;
+  }
+  
+  .takeaways-content {
+    gap: 48px;
+  }
+  
+  .takeaways-title,
+  .prototype-title {
+    font-size: 36px !important;
+  }
+  
+  .prototype-button {
+    font-size: 24px !important;
+    padding: 18px 32px;
+  }
+}

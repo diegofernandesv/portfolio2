@@ -1,0 +1,128 @@
+.intro-section {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+  position: relative;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+  width: 100%;
+}
+
+      .intro-text-container {
+    font-size: 24px;
+  }
+
+
+.intro-title-section {
+  display: flex;
+  width: 604px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.intro-title {
+  align-self: stretch;
+  color: #C6B49B;
+  position: relative;
+  font: 500 64px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.intro-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  position: relative;
+}
+
+.intro-description {
+  width: 600px;
+  color: #000;
+  position: relative;
+  font: 500 24px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.intro-solution-section {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  position: relative;
+}
+
+.intro-solution {
+  align-self: stretch;
+  color: #000;
+  position: relative;
+  font: 400 24px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .intro-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+
+  .intro-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .intro-title-section {
+    width: 100%;
+    max-width: 604px;
+  }
+      .intro-text-container {
+    font-size: 16px;
+  }
+
+  .intro-title {
+    font-size: 48px;
+  }
+
+  .intro-description {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .intro-solution-section {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-section {
+    padding: 20px 16px;
+    gap: 30px;
+  }
+
+  .intro-content {
+    gap: 30px;
+  }
+
+  .intro-title {
+    font-size: 36px;
+  }
+
+    .intro-description {
+    font-size: 16px;
+  }
+
+  .intro-solution {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,112 @@
+.card-sorting-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 24px 24px;
+}
+
+.card-sorting-content {
+  background-color: rgba(190, 16, 41, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 51%;
+  height: 403px;
+  padding: 72px 64px;
+  border-radius: 0 0 0 24px;
+  box-sizing: border-box;
+}
+
+.card-sorting-text {
+  max-width: 604px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.card-sorting-title {
+  color: rgba(198, 180, 155, 1);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.card-sorting-description {
+  width: 100%;
+  max-width: 575px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card-sorting-image {
+  flex: 1;
+  display: flex;
+  width: 49%;
+}
+
+.sorting-image {
+  width: 100%;
+  height: 403px;
+  border-radius: 0 0 24px 0;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .card-sorting-section {
+    flex-direction: column;
+  }
+
+  .card-sorting-content {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    padding: 40px 20px 60px;
+    border-radius: 0;
+  }
+
+  .card-sorting-title {
+    font-size: 48px;
+  }
+
+  .card-sorting-description {
+    font-size: 20px;
+    margin-top: 16px;
+  }
+
+  .card-sorting-image {
+    width: 100%;
+  }
+
+  .sorting-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 24px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-sorting-content {
+    padding: 30px;
+    gap: 8px;
+  }
+
+  .card-sorting-text {
+    gap: 16px;
+  }
+
+  .card-sorting-title {
+    font-size: 32px;
+  }
+
+  .card-sorting-description {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+}

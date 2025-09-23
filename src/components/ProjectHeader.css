@@ -1,0 +1,215 @@
+.project-header {
+  display: flex;
+  width: 100%;
+  height: 472px;
+  padding: 38px 77px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.project-background-image {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  gap: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 64px 64px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.project-header-content {
+  display: flex;
+  width: 100%;
+  max-width: 1345px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 142px;
+  position: relative;
+  z-index: 2;
+}
+
+.go-back-button {
+  display: flex;
+  padding: 20px 40px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 24px;
+  border: 1px solid #2E2E2E;
+  background-color: #1E1E1E;
+  color: #F7F7F7;
+  font: 400 20px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.go-back-button:hover {
+  background-color: #2A2A2A;
+  border-color: #404040;
+}
+
+.project-header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.project-title {
+  color: #C6B49B;
+  font: 400 64px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+  position: relative;
+}
+
+.project-details-card {
+  display: flex;
+  width: 234px;
+  height: 149px;
+  padding: 36px 60px 36px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 12px;
+  background-color: #242424;
+  position: relative;
+}
+
+.project-details-list {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.project-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  color: #FFF;
+  font: 400 12px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.detail-icon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
+.detail-text {
+  color: #FFF;
+  font: 400 12px/120% 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .project-header {
+    padding: 24px 40px;
+    height: 400px;
+  }
+
+  .project-header-content {
+    gap: 80px;
+  }
+
+  .go-back-button {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+
+  .project-title {
+    font-size: 48px;
+  }
+
+  .project-details-card {
+    width: 200px;
+    height: 120px;
+    padding: 24px 40px;
+  }
+
+  .project-details-list {
+    width: auto;
+    gap: 8px;
+  }
+
+  .detail-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Let the image sit on top and text below it */
+  .project-header {
+    padding: 0 0 20px 0; /* full-bleed image, text gets side padding below */
+    height: auto;       /* grow with content */
+  }
+
+  .project-background-image {
+    position: static;   /* no overlay */
+    display: block;
+    width: 100%;
+    height: 220px;      /* keep aspect feel */
+    object-fit: cover;
+    border-radius: 0 0 32px 32px;
+    z-index: auto;
+  }
+
+  .project-header-content {
+    position: static; /* allow absolute children to anchor to .project-header */
+    z-index: auto;
+    gap: 24px;
+    padding: 16px 20px 0; /* side padding for text under image */
+  }
+
+  .go-back-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    position: absolute; /* keep same visual position over the image */
+    top: 12px;
+    left: 20px; /* align with text padding */
+    z-index: 3;
+  }
+
+  .project-title {
+    font-size: 32px;
+  }
+
+  .project-header-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .project-details-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    max-width: 280px;
+  }
+
+  .project-details-list {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .project-detail-item {
+    align-self: stretch;
+  }
+
+  .detail-text {
+    font-size: 14px;
+  }
+}

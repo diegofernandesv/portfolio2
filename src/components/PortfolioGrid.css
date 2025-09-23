@@ -10,6 +10,7 @@
   padding: clamp(2rem, 8vw, 6rem) clamp(16px, 4vw, 2rem);
   max-width: 1400px;
   margin: 0 auto;
+  margin-top: 48px;
 }
 
 .portfolio-header {
@@ -96,7 +97,7 @@
 
 .portfolio-tag-absolute {
   position: absolute;
-  bottom: clamp(44px, 8vw, 88px);
+  bottom: clamp(20px, 8vw, 20px);
   right: clamp(16px, 4vw, 31px);
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(0, 0, 0, 1);
@@ -168,6 +169,7 @@
   .portfolio-projects-grid {
     grid-template-columns: 1fr 1fr;
     gap: clamp(40px, 6vw, 64px) clamp(32px, 4vw, 44px);
+    margin-top: 48px;
   }
   
   .portfolio-project-info {
@@ -230,6 +232,7 @@
 @media (max-width: 375px) {
   .portfolio-grid {
     padding: clamp(1.5rem, 6vw, 4rem) clamp(12px, 3vw, 16px);
+        margin-top: 64px;
   }
 
   .portfolio-filters {

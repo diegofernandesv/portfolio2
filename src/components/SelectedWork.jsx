@@ -1,8 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import AnimatedContent from "./AnimatedContent";
 import "./SelectedWork.css";
 import StarBorder from "./StarBorder";
 
 function SelectedWork() {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (projectName) => {
+    if (projectName === "SpilCafeen") {
+      navigate("/spilcafeen");
+    }
+  };
+
   return (
     <AnimatedContent>
     <div className="selected-work">
@@ -16,7 +25,7 @@ function SelectedWork() {
       </div>
       <AnimatedContent>
       <div className="projects-grid">
-        <div className="project-card">
+        <div className="project-card" onClick={() => handleProjectClick("SpilCafeen")}>
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/d644e0bdf7def47c98433891c3b748d710a1ddbf?placeholderIfAbsent=true"
             alt="SpilCafeen project"

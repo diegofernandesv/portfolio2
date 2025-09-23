@@ -1,0 +1,134 @@
+.design-system-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Aspekta', -apple-system, Roboto, Helvetica, sans-serif;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1369px;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding: 0 20px;
+}
+
+.design-system-header {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.design-system-title {
+  color: rgba(198, 180, 155, 1);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 459px;
+  flex-shrink: 0;
+}
+
+.design-system-description {
+  color: rgba(169, 169, 169, 1);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  width: 815px;
+  flex: 1;
+}
+
+.design-system-image {
+  aspect-ratio: 2.16;
+  object-fit: contain;
+  object-position: center;
+  width: 1369px;
+  margin-top: 78px;
+  max-width: 100%;
+}
+
+.card-components-section {
+  margin-top: 78px;
+  width: 817px;
+  max-width: 100%;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card-components-image {
+  aspect-ratio: 1.23;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.card-components-caption {
+  margin-top: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .design-system-header {
+    max-width: 100%;
+  }
+
+  .design-system-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .design-system-description {
+    max-width: 100%;
+  }
+
+  .design-system-image {
+    margin-top: 40px;
+  }
+
+  .card-components-section {
+    margin-top: 40px;
+  }
+
+  .card-components-caption {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .design-system-section {
+    padding: 0 15px;
+  }
+
+  .design-system-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .design-system-title {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .design-system-description {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .design-system-image {
+    margin-top: 30px;
+  }
+
+  .card-components-section {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .card-components-caption {
+    margin-top: 16px;
+  }
+}
