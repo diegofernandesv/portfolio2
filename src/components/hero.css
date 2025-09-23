@@ -303,7 +303,7 @@ body.scrollable { overflow-y: auto !important; }
   .preloader-container { max-width: 300px; max-height: 400px; border-radius: 16px; }
   .big-title { font-size: clamp(36px, 16vw, 12rem); left: 16px; bottom: 5rem; }
   .hero {
-      height: 90vh;
+      height: 85vh;
   }
   .footer {
 position: absolute;
