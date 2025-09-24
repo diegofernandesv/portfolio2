@@ -41,16 +41,16 @@ function NaturhistoriskMuseum() {
         content="Naturhistorisk Museum Aarhus was struggling to attract independent adults, with most of its visitors being families and school groups. Exhibitions felt static, outdated, and lacked the interactivity that today's audiences expect. Our challenge was to create a solution that could increase visitor engagement and make the museum more appealing to adults aged 18–30. The result was The Spotlight — a digital add-on that transforms passive observation into active participation through interactive booths, storytelling, and reflection."
       />
          <DesignProcess />
-      <ToggleSection title="Discover" defaultOpen={true}>
+      <ToggleSection title="Research" defaultOpen={true}>
         <ResearchChallenge />
       </ToggleSection>
 
-      <ToggleSection title="Define">
+      <ToggleSection title="The concept">
         <ConceptExperienceDesign />
         <ExhibitionBooths />
       </ToggleSection>
 
-      <ToggleSection title="Develop">
+      <ToggleSection title="Developing the idea">
         <LoFiToHiFi />
         <TypeColors />
       </ToggleSection>

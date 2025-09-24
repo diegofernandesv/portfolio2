@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function ExhibitionBooths() {
   return (
-    <AnimatedContent>
       <div className="exhibition-booths-section">
         <div className="booths-content-wrapper">
           <div className="booths-section">
@@ -42,7 +41,6 @@ function ExhibitionBooths() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

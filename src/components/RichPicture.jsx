@@ -3,7 +3,6 @@ import AnimatedContent from './AnimatedContent';
 
 function RichPicture() {
   return (
-    <AnimatedContent>
       <div className="rich-picture-section">
         <div className="rich-picture-image">
           <img
@@ -23,7 +22,6 @@ function RichPicture() {
           </div>
         </div>
       </div>
-    </AnimatedContent>
   );
 }
 

@@ -295,8 +295,13 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
 
           <div className="header-right">
             <div className="social-links">
-              {/* Keep as regular link (e.g., to a PDF or external URL). Replace '#' when you have your CV URL */}
-              <a href="#" className="nav-link">
+              {/* Serve CV from /public as 'Cv Diego Fernandes.pdf' with correct base path */}
+              <a
+                href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing"
+                className="nav-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
                 Check my CV
               </a>
@@ -340,7 +345,13 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
           <Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>
             About me
           </Link>
-          <a href="#" className="nav-link" onClick={() => setMenuOpen(false)}>
+          <a
+            href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing"
+            className="nav-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+          >
             <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
             Check my CV
           </a>

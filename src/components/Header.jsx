@@ -59,7 +59,7 @@ export default function Header() {
         <div className="header-right">
           <div className="social-links">
             {/* Replace href with your real CV URL (can be /portfolio/cv.pdf on GH Pages) */}
-            <a href="/portfolio/cv.pdf" target="_blank" rel="noopener noreferrer" className="nav-link">
+            <a href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link">
               <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
               Check my CV
             </a>
