@@ -88,7 +88,8 @@ const SplitText = ({
               scrollTrigger: {
                 trigger: el,
                 start,
-                once: true,
+                // Replay on enter and enter-back, reverse on leave
+                toggleActions: 'play reverse play reverse',
                 fastScrollEnd: true,
                 anticipatePin: 0.4
               },

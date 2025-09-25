@@ -2,12 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   gap: clamp(16px, 4vw, 48px);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: clamp(16px, 4vw, 32px);
   margin-top: 164px;
+  margin-bottom: 164px;
 }
 
 .skiper-left {
@@ -33,10 +35,19 @@
 }
 
 .skiper-paragraph {
-  color: #000;
+  /* Force black text regardless of inherited theme colors */
+  color: #000 !important;
   font-size: clamp(16px, 2.6vw, 20px);
   line-height: 1.5;
   margin: 0;
+}
+
+/* When SplitText injects spans, keep them black too */
+.skiper-paragraph.split-parent,
+.skiper-paragraph .split-word,
+.skiper-paragraph .split-char,
+.skiper-paragraph * {
+  color: #000 !important;
 }
 
 .skiper-fallback {
@@ -57,4 +68,3 @@
   }
   .skiper-right { width: 100%; }
 }
-

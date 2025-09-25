@@ -54,6 +54,7 @@ export default function SkiperIntro() {
           threshold={0.15}
           rootMargin="-80px"
           textAlign="left"
+          color="black"
           onLetterAnimationComplete={handleAnimationComplete}
         />
       </div>
