@@ -6,6 +6,7 @@ import image3 from "../assets/image3.png";
 import image4 from "../assets/image4.png";
 import image5 from "../assets/image5.png";
 import AnimatedContent from "./AnimatedContent";
+import { Link } from "react-router-dom";
 
 const images = [image1, image2, image3, image4, image5];
 
@@ -35,11 +36,9 @@ function LifeSection() {
           <div className="life-main-text">
             But life is more than just pixels &amp; lines of code.
           </div>
-          <div className="life-cta-button">
-            <div className="life-cta-text">
-              Get to know me better
-            </div>
-          </div>
+          <Link to="/about" className="life-cta-button" aria-label="Get to know me better">
+            <div className="life-cta-text">Get to know me better</div>
+          </Link>
         </div>
       </div>
     </div>

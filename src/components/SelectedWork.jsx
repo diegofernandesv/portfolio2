@@ -24,7 +24,7 @@ function SelectedWork() {
           <div className="selected-work-title">
             Selected work
           </div>
-          <StarBorder>All work</StarBorder>
+          <StarBorder as="button" onClick={() => navigate('/projects')}>All work</StarBorder>
         </div>
       </div>
       <AnimatedContent>

@@ -1,7 +1,9 @@
 // CrawlVelocityBoost.jsx
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import StarBorder from "./StarBorder";
+import soundtrack from "../assets/starwarsmusic.mp3";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,6 +15,20 @@ export default function CrawlVelocityBoost() {
   const directionRef = useRef(1); // 1 forward, -1 reverse
   const viewportRef = useRef(null);
   const starsRef = useRef(null);
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    // Initialize audio volume once the element mounts
+    if (audioRef.current) {
+      audioRef.current.volume = 0.35;
+    }
+    return () => {
+      if (audioRef.current) {
+        try { audioRef.current.pause(); } catch (_) {}
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -177,6 +193,29 @@ export default function CrawlVelocityBoost() {
 
       {/* Fixed viewport */}
       <div ref={viewportRef} style={styles2.viewport}>
+        {/* Hidden audio element + toggle button */}
+        <audio ref={audioRef} src={soundtrack} preload="auto" loop />
+        <div style={{ position: 'absolute', bottom: 12, right: 48, zIndex: 20, pointerEvents: 'auto' }}>
+          <StarBorder
+            as="button"
+            onClick={async () => {
+              if (!audioRef.current) return;
+              try {
+                if (audioRef.current.paused) {
+                  await audioRef.current.play();
+                  setIsPlaying(true);
+                } else {
+                  audioRef.current.pause();
+                  setIsPlaying(false);
+                }
+              } catch (_) {}
+            }}
+            aria-pressed={isPlaying}
+            title={isPlaying ? 'Pause soundtrack' : 'Play soundtrack'}
+          >
+            {isPlaying ? 'Pause music' : 'Play music'}
+          </StarBorder>
+        </div>
         {/* Star field */}
         <div ref={starsRef} style={styles2.stars}>
           {Array.from({ length: 160 }).map((_, i) => (

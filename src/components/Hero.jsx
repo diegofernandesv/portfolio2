@@ -380,7 +380,7 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
         <div className="title-line"><span>creative developer in</span></div>
         <div className="title-line"><span>the making</span></div>
 
-        <StarBorder ref={checkWorkBtnRef}>Check my work</StarBorder>
+        <StarBorder as={Link} to="/projects" ref={checkWorkBtnRef}>Check my work</StarBorder>
       </div>
 
       {/* Footer inside hero */}
