@@ -28,7 +28,7 @@ const Skiper48 = () => {
 
   return (
     <div
-      className="flex w-full items-center justify-center bg-transparent overflow-visible min-h-[360px] md:min-h-[420px]"
+      className="flex w-full items-center justify-center bg-transparent overflow-visible min-h-[320px] md:min-h-[380px] lg:min-h-[460px]"
     >
       {/* 'cards' effect is not compatible with Swiper loop mode — disable loop to avoid warnings */}
       <Carousel_002 className="" images={images} loop={false} />
@@ -102,9 +102,9 @@ const Carousel_002 = ({
         }
         className="Carousal_002 mx-auto"
         style={{
-          // Responsive sizing: keep cards visible on small screens
-          width: "min(86vw, 260px)",
-          height: "calc(min(86vw, 260px) * 1.4615)",
+          // Responsive sizing: slightly smaller than previous
+          width: "clamp(240px, 32vw, 420px)",
+          height: "calc(clamp(240px, 32vw, 420px) * 1.4615)",
           overflow: "visible",
         }}
         modules={[EffectCards, Autoplay, Pagination, Navigation]}

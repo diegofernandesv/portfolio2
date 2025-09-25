@@ -3,7 +3,8 @@ import React from 'react';
 import Header from '../components/Header';
 import CrawlVelocityBoost from '../components/CrawlVelocityBoost';
 import SkiperIntro from '../components/SkiperIntro';
-import DesignJourney from '../components/DesignJourney';
+import TikTokEmbed from '../components/TikTokEmbed';
+import Footer from '../components/Footer';
 
 function About() {
   return (
@@ -11,7 +12,8 @@ function About() {
     <Header />
     <CrawlVelocityBoost />
     <SkiperIntro/>
-    <DesignJourney />
+    <TikTokEmbed url={import.meta.env.VITE_TIKTOK_VIDEO_URL} />
+    <Footer />
     </>
   );
 }

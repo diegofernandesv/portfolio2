@@ -31,7 +31,6 @@ function LifeSection() {
           className="life-image"
         />
         </AnimatedContent>
-        <AnimatedContent>
         <div className="life-text-content">
           <div className="life-main-text">
             But life is more than just pixels &amp; lines of code.
@@ -42,7 +41,6 @@ function LifeSection() {
             </div>
           </div>
         </div>
-        </AnimatedContent>
       </div>
     </div>
     </AnimatedContent>

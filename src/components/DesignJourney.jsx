@@ -29,6 +29,7 @@ function DesignJourney() {
             height: auto !important;
             max-width: 300px !important;
             min-height: 250px !important;
+            margin-bottom: 24px !important;
           }
         }
         @media (max-width: 640px) {

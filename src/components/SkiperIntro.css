@@ -3,26 +3,29 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  gap: clamp(16px, 4vw, 48px);
+  gap: clamp(24px, 4vw, 54px);
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: clamp(16px, 4vw, 32px);
   margin-top: 164px;
-  margin-bottom: 164px;
+  margin-bottom: 112px;
 }
 
 .skiper-left {
   flex: 1;
   min-width: 260px;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
 
 .skiper-right {
   flex: 1.2;
   min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(24px, 2.5vw, 64px);
 }
 
 .skiper-heading {
@@ -31,7 +34,7 @@
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.01em;
-  margin: 0 0 clamp(8px, 2vw, 16px) 0;
+  margin: 0; /* spacing handled by parent gap */
 }
 
 .skiper-paragraph {

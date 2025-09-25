@@ -1,4 +1,8 @@
 .page-footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 38px 64px;
   background-color: #C6B49B;
