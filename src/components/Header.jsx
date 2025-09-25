@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "./hero.css";
 import homeIcon from "../assets/home.svg";
 import projectsIcon from "../assets/projects.svg";
@@ -10,15 +10,18 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const mobileNavRef = useRef(null);
   const burgerRef = useRef(null);
+  const location = useLocation();
 
-  // Ensure header elements are visible even without GSAP timeline
+  // Ensure header elements are visible on non-home routes; let Hero animate on home
   useEffect(() => {
-    const els = document.querySelectorAll(".header-left, .header-middle, .social-links");
-    els.forEach((el) => {
-      el.style.opacity = "1";
-      el.style.transform = "none";
-    });
-  }, []);
+    if (location.pathname !== "/") {
+      const els = document.querySelectorAll(".header-left, .header-middle, .social-links, .header-right");
+      els.forEach((el) => {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+      });
+    }
+  }, [location.pathname]);
 
   // Simple burger animation (CSS handles the rest)
   useEffect(() => {
@@ -57,13 +60,6 @@ export default function Header() {
  
         {/* Right */}
         <div className="header-right">
-          <div >
-            <a href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link">
-              <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
-              Check my CV
-            </a>
-          </div>
-
           <button
             className="burger"
             aria-label="Toggle menu"
@@ -82,7 +78,7 @@ export default function Header() {
         <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
         <Link to="/projects" className="nav-link" onClick={closeMenu}>Projects</Link>
         <Link to="/about" className="nav-link" onClick={closeMenu}>About me</Link>
-        <a href="/portfolio/cv.pdf" className="nav-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
+        <a href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing" className="nav-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>
           <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
           Check my CV
         </a>

@@ -87,6 +87,7 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
       gsap.set(".header-left", { opacity: 0, y: -20 });
       gsap.set(".header-middle", { opacity: 0, y: -20 });
       gsap.set(".social-links", { opacity: 0, y: -20 });
+      gsap.set(".header-right", { opacity: 0, y: -20 });
       gsap.set(".footer", { y: "100%" });
 
       const wrappers = document.querySelectorAll(".image-wrapper");
@@ -186,8 +187,9 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
 
       mainTl.add("headerFooter", "pauseAfterZoom");
       mainTl.to(headerLeft, { opacity: 1, y: 0, duration: 0.6, ease: "directionalEase" }, "headerFooter");
-      mainTl.to(headerMiddle, { opacity: 1, y: 0, duration: 0.6, ease: "directionalEase", delay: 0.15 }, "headerFooter");
-      mainTl.to(socialLinks, { opacity: 1, y: 0, duration: 0.6, ease: "directionalEase", delay: 0.3 }, "headerFooter");
+      mainTl.to(headerMiddle, { opacity: 1, y: 0, duration: 0.6, ease: "directionalEase", delay: 0.1 }, "headerFooter");
+      mainTl.to(".header-right", { opacity: 1, y: 0, duration: 0.6, ease: "directionalEase", delay: 0.2 }, "headerFooter");
+      mainTl.to(socialLinks, { opacity: 1, y: 0, duration: 0.6, ease: "directionalEase", delay: 0.25 }, "headerFooter");
       mainTl.to(".footer", { y: 0, duration: 0.7, ease: "directionalEase" }, "headerFooter+=0.4");
 
       mainTl.add("titleReveal", ">-0.2");

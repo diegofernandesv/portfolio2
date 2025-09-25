@@ -284,8 +284,10 @@ body.scrollable { overflow-y: auto !important; }
   
 }
 @media (max-width: 960px) {
-  .header-middle, .social-links { display: none; }
-  .burger { display: flex; }
+  .header-middle, .social-links { display: none !important; }
+  /* additionally hide any CV link wrapper inside header-right */
+  .header-right > a, .header-right > div a { display: none !important; }
+  .burger { display: flex; position: relative; z-index: 20000; }
   .header-inner { padding: 0 1.5rem; }
   .big-title { left: 2.5rem; bottom: 6rem; }
   .preloader-container {
@@ -294,6 +296,7 @@ body.scrollable { overflow-y: auto !important; }
 }
 @media (max-width: 768px) {
   .header-inner { padding: 0 1rem; }
+    .burger { display: flex; position: relative; z-index: 20000; }
   .preloader-container { width: 90vw; height: 50vw; }
   .big-title { font-size: clamp(36px, 9vw, 4rem); left: 2rem; }
   /* Tighter header container around burger on tablets */
@@ -305,6 +308,7 @@ body.scrollable { overflow-y: auto !important; }
 @media (max-width: 480px) {
   .preloader-container { max-width: 300px; max-height: 400px; border-radius: 16px; }
   .big-title { font-size: clamp(36px, 16vw, 12rem); left: 16px; bottom: 5rem; }
+    .burger { display: flex; z-index: 20000; position: relative; }
   .hero {
       height: 85vh;
   }
