@@ -54,10 +54,10 @@ export default function Header() {
             About me
           </NavLink>
         </nav>
-
+ 
         {/* Right */}
         <div className="header-right">
-          <div style={{ display:"flex", flexDirection: "row" , alignItems: "center",}}>
+          <div>
             {/* Replace href with your real CV URL (can be /portfolio/cv.pdf on GH Pages) */}
             <a href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link">
               <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />

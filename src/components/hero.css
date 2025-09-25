@@ -94,6 +94,8 @@ body.scrollable { overflow-y: auto !important; }
   background: rgba(29, 29, 29, 0.95);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  flex-direction: row;
+  align-items: center;
 }
 .header a {
   color: inherit;
