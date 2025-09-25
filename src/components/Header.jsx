@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
+import "./hero.css";
 import homeIcon from "../assets/home.svg";
 import projectsIcon from "../assets/projects.svg";
 import aboutmeIcon from "../assets/aboutme.svg";
