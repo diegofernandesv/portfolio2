@@ -57,9 +57,20 @@ export default function Header() {
             About me
           </NavLink>
         </nav>
+        
  
         {/* Right */}
         <div className="header-right">
+                    <a
+                      href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing"
+                      className="nav-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+                      Check my CV
+                    </a>
           <button
             className="burger"
             aria-label="Toggle menu"
@@ -75,6 +86,15 @@ export default function Header() {
 
       {/* Mobile overlay */}
       <nav className="mobile-nav" ref={mobileNavRef}>
+        <button
+          className="close-nav"
+          aria-label="Close menu"
+          onClick={() => setMenuOpen(false)}
+        >
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
+        </button>
         <Link to="/" className="nav-link" onClick={closeMenu}>Home</Link>
         <Link to="/projects" className="nav-link" onClick={closeMenu}>Projects</Link>
         <Link to="/about" className="nav-link" onClick={closeMenu}>About me</Link>
