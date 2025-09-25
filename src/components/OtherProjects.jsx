@@ -24,19 +24,21 @@ function OtherProjects() {
               </div>
             </div>
           </Link>
-          <div className="project-card">
-            <div className="portfolio-image-container">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/aca817ebcbed425ab4227fd20aad7fb8/0eb41618f11099cc313b06a22fd2b487dc0fafaf?placeholderIfAbsent=true"
-                alt="Copenhagen Fashion Week project"
-                className="project-image"
-              />
-              <div className="portfolio-tag-absolute">UX/UI</div>
+          <Link to="/oops-behance" className="project-card-link">
+            <div className="project-card">
+              <div className="portfolio-image-container">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/aca817ebcbed425ab4227fd20aad7fb8/0eb41618f11099cc313b06a22fd2b487dc0fafaf?placeholderIfAbsent=true"
+                  alt="Copenhagen Fashion Week project"
+                  className="project-image"
+                />
+                <div className="portfolio-tag-absolute">UX/UI</div>
+              </div>
+              <div className="project-info">
+                <div className="project-name">Copenhagen Fashion Week</div>
+              </div>
             </div>
-            <div className="project-info">
-              <div className="project-name">Copenhagen Fashion Week</div>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
   );

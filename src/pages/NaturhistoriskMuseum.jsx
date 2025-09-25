@@ -38,8 +38,10 @@ function NaturhistoriskMuseum() {
         date="April 2025"
       />
       <IntroSection
-        content="Naturhistorisk Museum Aarhus was struggling to attract independent adults, with most of its visitors being families and school groups. Exhibitions felt static, outdated, and lacked the interactivity that today's audiences expect. Our challenge was to create a solution that could increase visitor engagement and make the museum more appealing to adults aged 18–30. The result was The Spotlight — a digital add-on that transforms passive observation into active participation through interactive booths, storytelling, and reflection."
+        content="Naturhistorisk Museum Aarhus was struggling to attract independent adults, with most of its visitors being families and school groups. Exhibitions felt static, outdated, and lacked the interactivity that today's audiences expect. Our challenge was to create a solution that could increase visitor engagement and make the museum more appealing to adults aged 18–30. "
+        solution = "The result was The Spotlight — a digital add-on that transforms passive observation into active participation through interactive booths, storytelling, and reflection."
       />
+      
          <DesignProcess />
       <ToggleSection title="Research" defaultOpen={true}>
         <ResearchChallenge />

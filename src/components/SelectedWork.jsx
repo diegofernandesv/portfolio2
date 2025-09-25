@@ -11,6 +11,8 @@ function SelectedWork() {
       navigate("/spilcafeen");
     } else if (projectName === "Naturhistorisk Museum") {
       navigate("/naturhistorisk-museum");
+    } else if (projectName === "Copenhagen Fashion Week") {
+      navigate("/oops-behance");
     }
   };
 
@@ -37,7 +39,7 @@ function SelectedWork() {
             <div className="portfolio-tag-absolute">UX/UI</div>
           </div>
           <div className="project-info">
-            <div className="project-name">SpilCafeen</div>
+            <div className="project-name">SpilCafeen-Figuring out what to play</div>
           </div>
         </div>
 
@@ -73,7 +75,7 @@ function SelectedWork() {
             </div>
           </div>
 
-          <div className="project-card">
+          <div className="project-card" onClick={() => handleProjectClick("Copenhagen Fashion Week")}>
             <div className="portfolio-image-container">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/0eb41618f11099cc313b06a22fd2b487dc0fafaf?placeholderIfAbsent=true"

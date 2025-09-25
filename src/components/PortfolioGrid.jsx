@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AnimatedContent from "./AnimatedContent";
 import "./PortfolioGrid.css";
+import presentation from '../assets/presentation.png';
 
 function PortfolioGrid() {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -12,6 +13,10 @@ function PortfolioGrid() {
       navigate("/spilcafeen");
     } else if (projectTitle.includes("The Spotlight") || projectTitle.includes("Naturhistorisk")) {
       navigate("/naturhistorisk-museum");
+    } else if (projectTitle.includes("Copenhagen Fashion Week")) {
+      navigate("/oops-behance");
+    } else if (projectTitle.toLowerCase().includes("caracas")) {
+      navigate("/oops-behance1");
     }
   };
 
@@ -39,10 +44,11 @@ function PortfolioGrid() {
     },
     {
       id: 4,
-      title: "SpilCafeen Dashboard",
-      image: "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/f7a88dab7ec855a8d9d86599226389e271e7c6df?placeholderIfAbsent=true",
-      categories: ["Coding"]
+      title: "VisitCaracas",
+      image: presentation,
+      categories: ["UX/UI", "Coding"]
     },
+    
     {
       id: 5,
       title: "Laeso Kur",

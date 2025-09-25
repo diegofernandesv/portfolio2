@@ -62,7 +62,15 @@ function Spilcafeen() {
        <HiFi />
       </ToggleSection>
 
-      <TakeAways />
+      <TakeAways
+        onCta={() =>
+          window.open(
+            'https://www.figma.com/proto/2eQpcFC1snkJi8UzOeiHII/Spilcafeen-Prototypes?page-id=125%3A398&node-id=811-5792&viewport=156%2C20%2C0.19&t=ttc0Jy7ofsA4Yba4-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=811%3A5792',
+            '_blank',
+            'noopener,noreferrer'
+          )
+        }
+      />
       <OtherProjects />
       <StarBorder
         as="button"

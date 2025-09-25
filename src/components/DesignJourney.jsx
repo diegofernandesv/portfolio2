@@ -70,7 +70,7 @@ function DesignJourney() {
         >
           <SplitText
             text={
-              'My design journey began during the pandemic when I wanted graphics for my sports Instagram. After my brother got me a Domestika course, I started experimenting in Photoshop and eventually sold my first design for $3. That small step sparked my passion and led me to where I am now — creating user-centered designs that are simple, engaging, and original. At Business Academy Aarhus, I also discovered how much I enjoy combining design with coding — building websites, apps, and interactive experiences that bring ideas to life.'
+              'My design journey began during the pandemic when I wanted graphics for my sports Instagram. After my brother got me a Domestika course, I started experimenting in Photoshop and eventually sold my first design for $3. That small step sparked my passion and led me to where I am now, creating user-centered designs that are simple, engaging, and original. At Business Academy Aarhus, I also discovered how much I enjoy combining design with coding, building websites, apps, and interactive experiences that bring ideas to life.'
             }
             className="design-journey-paragraph"
             delay={50}
