@@ -272,7 +272,7 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
               to="/"
               className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             >
-              <img src={homeIcon} alt="Home" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+              <img src={homeIcon} alt="Home" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
               Home
             </NavLink>
 
@@ -280,7 +280,7 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
               to="/projects"
               className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             >
-              <img src={projectsIcon} alt="Projects" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+              <img src={projectsIcon} alt="Projects" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
               Projects
             </NavLink>
 
@@ -288,7 +288,7 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
               to="/about"
               className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             >
-              <img src={aboutmeIcon} alt="About me" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+              <img src={aboutmeIcon} alt="About me" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
               About me
             </NavLink>
           </div>
@@ -302,7 +302,7 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+                <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
                 Check my CV
               </a>
             </div>

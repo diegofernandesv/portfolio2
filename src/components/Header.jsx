@@ -40,17 +40,17 @@ export default function Header() {
         {/* Middle (desktop nav) */}
         <nav className="header-middle">
           <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-            <img src={homeIcon} alt="Home" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+            <img src={homeIcon} alt="Home" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
             Home
           </NavLink>
 
           <NavLink to="/projects" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-            <img src={projectsIcon} alt="Projects" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+            <img src={projectsIcon} alt="Projects" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
             Projects
           </NavLink>
 
           <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
-            <img src={aboutmeIcon} alt="About me" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+            <img src={aboutmeIcon} alt="About me" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
             About me
           </NavLink>
         </nav>
@@ -60,7 +60,7 @@ export default function Header() {
           <div className="social-links">
             {/* Replace href with your real CV URL (can be /portfolio/cv.pdf on GH Pages) */}
             <a href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="nav-link">
-              <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
+              <img src={cvIcon} alt="CV" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
               Check my CV
             </a>
           </div>

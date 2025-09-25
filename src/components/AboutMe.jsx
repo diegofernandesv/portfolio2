@@ -4,7 +4,6 @@ import gsap from "gsap";
 import SplitText from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./AboutMe.css";
-import videoSrc from "../assets/scene.mp4";
 import StarBorder from "./StarBorder";
 import studiesIcon from "../assets/studies.svg";
 
