@@ -1,12 +1,15 @@
 import React from 'react';
-import AboutMe from '../components/AboutMe';
+
 import Header from '../components/Header';
+import CrawlVelocityBoost from '../components/CrawlVelocityBoost';
+import SkiperIntro from '../components/SkiperIntro';
 
 function About() {
   return (
     <>
     <Header />
-    <AboutMe />
+    <CrawlVelocityBoost />
+    <SkiperIntro/>
     </>
   );
 }
