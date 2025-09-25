@@ -268,33 +268,33 @@ function Hero({ onAnimationComplete, preventRestart = false }) {
 
           {/* DESKTOP NAV (uses NavLink for active state) */}
           <div className="header-middle">
-            <NavLink
+            <NavLink style={{ display:"flex", flexDirection: "row" , alignItems: "center",}}
               to="/"
               className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             >
-              <img src={homeIcon} alt="Home" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
+              <img src={homeIcon} alt="Home" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
               Home
             </NavLink>
 
-            <NavLink
+            <NavLink style={{ display:"flex", flexDirection: "row" , alignItems: "center",}}
               to="/projects"
               className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             >
-              <img src={projectsIcon} alt="Projects" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
+              <img src={projectsIcon} alt="Projects" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
               Projects
             </NavLink>
 
-            <NavLink
+            <NavLink style={{ display:"flex", flexDirection: "row" , alignItems: "center",}}
               to="/about"
               className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             >
-              <img src={aboutmeIcon} alt="About me" style={{ width: 16, height: 16, marginRight: 4, verticalAlign: "middle" }} />
+              <img src={aboutmeIcon} alt="About me" style={{ width: 16, height: 16, marginRight: 8, verticalAlign: "middle" }} />
               About me
             </NavLink>
           </div>
 
           <div className="header-right">
-            <div className="social-links">
+            <div style={{ display:"flex", flexDirection: "row" , alignItems: "center",}}>
               {/* Serve CV from /public as 'Cv Diego Fernandes.pdf' with correct base path */}
               <a
                 href="https://drive.google.com/file/d/1_12JZX2jlAc8FqAXYQyKM8j2N6_n4sQz/view?usp=sharing"
