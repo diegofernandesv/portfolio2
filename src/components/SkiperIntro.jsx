@@ -14,6 +14,7 @@ const Skiper48 = lazy(async () => {
 
 export default function SkiperIntro() {
   const handleAnimationComplete = () => {};
+  const style={ marginBottom:24 };
   return (
     <AnimatedContent>
       <section className="skiper-intro" aria-labelledby="skiper-intro-title">
@@ -40,16 +41,16 @@ export default function SkiperIntro() {
             onLetterAnimationComplete={handleAnimationComplete}
           />
           <div className="skiper-paragraph">
-            <p>
+            <p style={style}>
               A 21-year-old guy from Venezuela with Portuguese roots, and currently studying Multimedia Design in Aarhus, Denmark. People often say that’s a long way from home, and they’re right. I still don’t know exactly how life brought me here, but I’m making the most of the experience.
             </p>
-            <p>
+            <p  style={style}>
               My design journey began during the pandemic when I wanted graphics for my sports Instagram. After my brother got me a Domestika course, I started experimenting in Photoshop and eventually sold my first design for $3. That small step sparked my passion and led me to where I am now, creating user-centered designs that are simple, engaging, and original. At Business Academy Aarhus, I also discovered how much I enjoy combining design with coding, building websites, apps, and interactive experiences that bring ideas to life.
             </p>
-            <p>
+            <p    style={style}>
               Outside of designing and coding, I’m a football fan (Real Madrid forever, Cristiano Ronaldo is my GOAT), I enjoy swimming, the gym, and traveling, Denmark is actually the third country I’ve lived in. I also run my personal brand, Fdez.UXUI, where I share design insights on TikTok, with some videos already reaching over 100K views.
             </p>
-            <p>
+            <p    style={style}>
               If I had to live by one phrase, it would be: “Life is all about the experience.” That’s how I see design, challenges, and everything in between — as opportunities to grow and learn.
             </p>
           </div>
