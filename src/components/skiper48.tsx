@@ -68,7 +68,7 @@ const Carousel_002 = ({
         duration: 0.3,
         delay: 0.5,
       }}
-      className={cn("relative w-full max-w-3xl", className)}
+      className={cn("relative w-full max-w-3xl flex justify-center", className)}
     >
       <style>{css}</style>
 
@@ -100,7 +100,7 @@ const Carousel_002 = ({
               }
             : false
         }
-        className="Carousal_002"
+        className="Carousal_002 mx-auto"
         style={{
           // Responsive sizing: keep cards visible on small screens
           width: "min(86vw, 260px)",
