@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PortfolioGrid from "../components/PortfolioGrid";
 
@@ -6,6 +7,7 @@ function Projects() {
     <>
       <Header />
       <PortfolioGrid />
+      <Footer />
     </>
   );
 }

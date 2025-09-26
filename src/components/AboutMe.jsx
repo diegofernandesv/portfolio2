@@ -196,11 +196,6 @@ function AboutMe() {
             Currently studying Multimedia Design at Business Academy Aarhus.
           </span>
         </p>
-
-        {/* CTA with a class so we can animate it */}
-        <div className="about-me-cta">
-          <StarBorder>Learn More</StarBorder>
-        </div>
       </div>
 
       {/* If you want to use the video later in this section */}

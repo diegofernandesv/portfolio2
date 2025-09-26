@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import StarBorder from "./StarBorder";
 import soundtrack from "../assets/starwarsmusic.mp3";
+import { text } from "framer-motion/client";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -307,16 +308,16 @@ const styles2 = {
     transformStyle: "preserve-3d",
   },
   crawl: {
-    maxWidth: "22em",
+    maxWidth: "28em",
     margin: "0 auto",
     padding: "0 1rem",
     lineHeight: 1.7,
     transformOrigin: "50% 100%",
     transform: "rotateX(25deg) translateY(70vh)",
-    textAlign: "justify",
     letterSpacing: "0.02em",
     fontWeight: 600,
     textTransform: "uppercase",
+    textAlign: "center",
   },
   title: { textAlign: "center", marginBottom: "1.5rem" },
   h1: { margin: "0 0 .25rem 0", fontSize: "1.75rem", letterSpacing: ".05em" },

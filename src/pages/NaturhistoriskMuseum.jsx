@@ -26,6 +26,8 @@ import TypeColors from "../components/TypeColors";
 import "../components/NaturhistoriskTheme.css";
 import spotlightImg from '../assets/Spotlight.png';
 import Footer from "../components/Footer";
+import StarBorder from "../components/StarBorder";
+import "./spilcafeen.css";
 
 function NaturhistoriskMuseum() {
   return (
@@ -67,6 +69,16 @@ function NaturhistoriskMuseum() {
         }
       />
         <OtherProjects />
+        <StarBorder
+          as="button"
+          className="go-top-fixed"
+          onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
+          aria-label="Go to the top"
+          title="Go to the top"
+          style={{ padding: 0 }}
+        >
+          Go to the top
+        </StarBorder>
         <Footer />
     </div>
   );
