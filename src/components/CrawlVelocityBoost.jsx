@@ -65,10 +65,12 @@ export default function CrawlVelocityBoost() {
 
       // Make the total crawl longer on phones for readability.
       const baseDuration = isPhone ? 85 : 60;
+      const startScale = isPhone ? 1.5 : 1.9;
+      const endScale = isPhone ? 0.22 : 0.18;
       tlRef.current.fromTo(
         crawlRef.current,
-        { y: "70vh" },
-        { y: "-180vh", duration: baseDuration, ease: "none" }
+        { y: "70vh", scale: startScale, transformOrigin: "50% 100%" },
+        { y: "-180vh", scale: endScale, duration: baseDuration, ease: "none", transformOrigin: "50% 100%" }
       );
 
       // ===== Speed / boost model (gentler on mobile) =====
@@ -184,11 +186,16 @@ export default function CrawlVelocityBoost() {
     <div ref={rootRef} style={{ background: "#000" }}>
       {/* Responsive type bump on phones */}
       <style>{`
+        /* Base spacing for readability */
+        .crawl-vb p { margin: 0 0 1.2rem 0; }
+        .crawl-vb p:last-child { margin-bottom: 0; }
+
         @media (max-width: 480px) {
-          .crawl-vb { font-size: 2rem; line-height: 1.9; }
-          .crawl-vb h1 { font-size: 2rem; }
-          .crawl-vb h2 { font-size: 2rem; letter-spacing: .25em; }
-          .crawl-vb p  { font-size: 2rem; }
+          .crawl-vb { font-size: 2.8rem; line-height: 2.15; }
+          .crawl-vb h1 { font-size: 2.8rem; }
+          .crawl-vb h2 { font-size: 2.4rem; letter-spacing: .25em; }
+          .crawl-vb p  { font-size: 2.5rem; margin: 0 0 1.8rem 0; }
+          .crawl-vb p:last-child { margin-bottom: 0; }
         }
       `}</style>
 
@@ -313,14 +320,15 @@ const styles2 = {
     padding: "0 1rem",
     lineHeight: 1.7,
     transformOrigin: "50% 100%",
-    transform: "rotateX(25deg) translateY(70vh)",
+    transform: "rotateX(25deg)",
+    willChange: "transform, opacity",
     letterSpacing: "0.02em",
     fontWeight: 600,
     textTransform: "uppercase",
-    textAlign: "center",
+    textAlign: "justify",
   },
-  title: { textAlign: "center", marginBottom: "1.5rem" },
-  h1: { margin: "0 0 .25rem 0", fontSize: "1.75rem", letterSpacing: ".05em" },
-  h2: { margin: 0, fontSize: "1rem", letterSpacing: ".2em", textTransform: "uppercase" },
-  p: { textTransform: "uppercase", fontWeight: 500, fontSize: "1.125rem" },
+  title: { textAlign: "center", marginBottom: "2rem" },
+  h1: { margin: "0 0 1rem 0", fontSize: "2.6rem", letterSpacing: ".05em" },
+  h2: { margin: "0 0 .9rem 0", fontSize: "1.4rem", letterSpacing: ".2em", textTransform: "uppercase" },
+  p: { textTransform: "uppercase", fontWeight: 500, fontSize: "1.35rem" },
 };

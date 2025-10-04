@@ -1,0 +1,215 @@
+.spilcafeen-define-phase {
+  background-color: #1c1917;
+  padding: 128px 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.spilcafeen-define-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1384px;
+  min-width: 240px;
+}
+
+/* Base Section Styles */
+.spilcafeen-define-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.spilcafeen-define-section-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.spilcafeen-define-section-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.spilcafeen-define-section-large-margin {
+  margin-top: 384px;
+}
+
+/* Header Styles */
+.spilcafeen-define-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: flex-start;
+  line-height: 1.2;
+  color: #a8a29e;
+}
+
+.spilcafeen-define-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px 6px 12px;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 16px;
+  border: 1px solid #a8a29e;
+  min-height: 31px;
+  width: 31px;
+}
+
+.spilcafeen-define-title {
+  font-size: 18px;
+  color: #a8a29e;
+}
+
+.spilcafeen-define-description {
+  margin-top: 16px;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+}
+
+.spilcafeen-define-description-narrow {
+  max-width: 575px;
+}
+
+/* Content Layout Styles */
+.spilcafeen-define-content-left {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  width: 575px;
+}
+
+.spilcafeen-define-content-right {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  width: 575px;
+}
+
+.spilcafeen-define-content-grow {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 240px;
+  width: 460px;
+}
+
+.spilcafeen-define-content-wide {
+  min-width: 240px;
+  width: 657px;
+}
+
+/* Image Styles */
+.spilcafeen-define-image-full {
+  object-fit: contain;
+  margin-top: 64px;
+  width: 100%;
+  border-radius: 64px;
+  aspect-ratio: 2.2;
+}
+
+.spilcafeen-define-image-left {
+  object-fit: contain;
+  aspect-ratio: 1.42;
+  min-width: 240px;
+  border-radius: 64px;
+  width: 532px;
+}
+
+.spilcafeen-define-image-right {
+  object-fit: contain;
+  aspect-ratio: 1.53;
+  min-width: 240px;
+  width: 577px;
+}
+
+.spilcafeen-define-image-grow {
+  flex-grow: 1;
+  flex-shrink: 1;
+  aspect-ratio: 1.47;
+  min-width: 240px;
+  width: 517px;
+}
+
+/* User Flow Section */
+.spilcafeen-define-flow-section {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.spilcafeen-user-flow-image {
+  margin-top: 64px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .spilcafeen-define-phase {
+    padding: 96px 20px;
+  }
+
+  .spilcafeen-define-section-horizontal {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .spilcafeen-define-section-horizontal > :where(img, picture, .spilcafeen-define-image-left, .spilcafeen-define-image-right, .spilcafeen-define-image-grow) {
+    order: 2;
+  }
+
+  .spilcafeen-define-section-horizontal > :where(.spilcafeen-define-content-left, .spilcafeen-define-content-right, .spilcafeen-define-content-grow, .spilcafeen-define-content-wide) {
+    order: 1;
+  }
+
+  .spilcafeen-define-content-left,
+  .spilcafeen-define-content-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .spilcafeen-define-image-left,
+  .spilcafeen-define-image-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .spilcafeen-define-section-large-margin {
+    margin-top: 40px;
+  }
+    .spilcafeen-define-image-full {
+    border-radius: 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .spilcafeen-define-phase {
+    padding: 64px 16px;
+  }
+
+  .spilcafeen-define-description {
+    font-size: 18px;
+  }
+
+  .spilcafeen-define-section-large-margin {
+    margin-top: 32px;
+  }
+
+  .spilcafeen-user-flow-image {
+    margin-top: 40px;
+  }
+  .spilcafeen-define-image-full {
+    border-radius: 24px;
+  }
+}

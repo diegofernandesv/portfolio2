@@ -1,0 +1,101 @@
+.spilcafeen-design-process {
+  margin-left : 82px;
+  margin-top: 96px;
+  margin-bottom: 96px;
+  max-width: 100%;
+  width: 1347px;
+}
+
+.spilcafeen-design-process-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.spilcafeen-design-process-step {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  line-height: 1.2;
+  color: #78716c;
+}
+
+.spilcafeen-design-process-step-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 6px 12px;
+  margin: auto 0;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 16px;
+  border: 1px solid #a8a29e;
+  min-height: 31px;
+  width: 31px;
+}
+
+.spilcafeen-design-process-step-title {
+  align-self: stretch;
+  margin: auto 0;
+  font-size: 18px;
+}
+
+.spilcafeen-design-process-description {
+  font-size: 24px;
+  line-height: 1.17;
+  color: #1c1917;
+  width: 968px;
+}
+
+.spilcafeen-design-process-image {
+  object-fit: contain;
+  margin-top: 64px;
+  width: 100%;
+  aspect-ratio: 1.9;
+  border-radius: 64px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .spilcafeen-design-process {
+    margin: 40px auto 0;
+  }
+
+  .spilcafeen-design-process-header {
+    max-width: 100%;
+  }
+
+  .spilcafeen-design-process-description {
+    max-width: 100%;
+  }
+
+  .spilcafeen-design-process-image {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .spilcafeen-design-process {
+    margin-left: 16px;
+    margin-bottom: 64px;
+    margin-top: 64px;
+  }
+
+  .spilcafeen-design-process-header {
+    max-width: 100%;
+  }
+
+  .spilcafeen-design-process-description {
+    max-width: 90%;
+    font-size: 18px;
+  }
+
+  .spilcafeen-design-process-image {
+    margin-top: 40px;
+    max-width: 90%;
+  }
+}

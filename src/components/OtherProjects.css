@@ -14,12 +14,11 @@
 }
 
 .projects-grid {
-  display: flex;
+  display: grid;
   width: 100%;
+  gap: clamp(32px, 5vw, 48px);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   align-items: start;
-  gap: 48px;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .project-card-link {
@@ -34,51 +33,48 @@
 }
 
 .project-card {
-  min-width: 240px;
-  width: 670px;
-  flex: 1;
+  min-width: 0;
+  width: 100%;
   cursor: pointer;
 }
 
 .project-image {
   aspect-ratio: 1.56;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
   width: 100%;
-  border-radius: 24px;
+  height: auto;
+  border-radius: clamp(16px, 3vw, 24px);
 }
 
 .project-info {
   display: flex;
-  margin-top: 22px;
+  margin-top: clamp(18px, 4vw, 22px);
   width: 100%;
-  align-items: center;
-  gap: 125px;
-  justify-content: start;
+  align-items: flex-start;
+  gap: clamp(16px, 4vw, 32px);
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.project-info:nth-child(2) {
-  margin-top: 16px;
-  gap: 171px;
-}
-
 .project-name {
-  font-size: 32px;
+  font-size: clamp(20px, 4vw, 32px);
   font-weight: 500;
   color: rgba(0, 0, 0, 1);
-  margin: auto 0;
+  margin: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .project-tags {
   display: flex;
   align-items: center;
-  gap: 9px;
-  font-size: 20px;
+  gap: 12px;
+  font-size: clamp(14px, 3vw, 20px);
   font-weight: 400;
-  white-space: nowrap;
-  justify-content: start;
-  margin: auto 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
 }
 
 .project-tag {
@@ -87,8 +83,8 @@
   align-items: center;
   gap: 10px;
   justify-content: center;
-  width: 98px;
-  padding: 10px;
+  min-width: 88px;
+  padding: 10px 16px;
   border: 1px solid rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 1);
 }
@@ -106,24 +102,7 @@
   }
 
   .projects-grid {
-    margin-top: 40px;
-    gap: 40px;
-  }
-
-  .project-card {
-    max-width: 100%;
-  }
-
-  .project-image {
-    max-width: 100%;
-  }
-
-  .project-info {
-    max-width: 100%;
-  }
-
-  .project-tags {
-    white-space: initial;
+    gap: 32px;
   }
 }
 
@@ -141,22 +120,12 @@
   }
 
   .project-info {
-    gap: 20px;
+    gap: 16px;
     flex-direction: column;
-    align-items: start;
-  }
-
-  .project-info:nth-child(2) {
-    gap: 20px;
+    align-items: flex-start;
   }
 
   .project-tags {
     width: 100%;
-  }
-
-  .project-tag {
-    flex: 1;
-    min-width: auto;
-    width: auto;
   }
 }

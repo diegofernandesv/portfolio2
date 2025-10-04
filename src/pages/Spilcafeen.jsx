@@ -1,24 +1,15 @@
 import ProjectHeader from "../components/ProjectHeader";
-import IntroSection from "../components/IntroSection";
-import DesignProcess from "../components/DesignProcess";
-import FieldResearch from "../components/FieldResearch";
-import DeskResearch from "../components/DeskResearch";
-import Persona from "../components/Persona";
-import RichPicture from "../components/RichPicture";
-import OOUX from "../components/OOUX";
-import UserStories from "../components/UserStories";
-import UserStoryMap from "../components/UserStoryMap";
-import UserFlow from "../components/UserFlow";
-import CardSortingTest from "../components/CardSortingTest";
-import LoFi from "../components/LoFi";
-import DesignSystem from "../components/DesignSystem";
-import HiFi from "../components/HiFi";
-import Mascot from "../components/Mascot";
-import DevelopSection from "../components/DevelopSection";
+import SpilcafeenIntro from "../components/spilcafeen/SpilcafeenIntro.jsx";
+import SpilcafeenDesignProcess from "../components/spilcafeen/SpilcafeenDesignProcess.jsx";
+import SpilcafeenResearch from "../components/spilcafeen/SpilcafeenResearch.jsx";
+import SpilcafeenDefinePhase from "../components/spilcafeen/SpilcafeenDefinePhase.jsx";
+import SpilcafeenIdeate from "../components/spilcafeen/SpilcafeenIdeate.jsx";
+import SpilcafeenHiFiMascot from "../components/spilcafeen/SpilcafeenHiFiMascot.jsx";
 import TakeAways from "../components/TakeAways";
 import OtherProjects from "../components/OtherProjects";
 import ToggleSection from "../components/ToggleSection";
 import StarBorder from "../components/StarBorder";
+import Footer from "../components/Footer";
 import "./spilcafeen.css";
 
 function Spilcafeen() {
@@ -31,35 +22,23 @@ function Spilcafeen() {
         team="4 people"
         date="Feb. 2025"
       />
-      <IntroSection />
-      <DesignProcess />
+      <SpilcafeenIntro />
+      <SpilcafeenDesignProcess />
 
       <ToggleSection title="Discover" defaultOpen={true}>
-      
-        <FieldResearch />
-        <DeskResearch />
+        <SpilcafeenResearch />
       </ToggleSection>
 
       <ToggleSection title="Define">
-        <Persona />
-        <RichPicture />
-        <OOUX />
-        <UserStories />
-        <UserStoryMap />
-        <UserFlow />
-        <CardSortingTest />
+        <SpilcafeenDefinePhase />
       </ToggleSection>
 
       <ToggleSection title="Develop">
-        <DevelopSection />
-        <Mascot />
-        <LoFi />
-        <DesignSystem />
-        
+        <SpilcafeenIdeate />
       </ToggleSection>
 
       <ToggleSection title="Deliver">
-       <HiFi />
+       <SpilcafeenHiFiMascot />
       </ToggleSection>
 
       <TakeAways
@@ -82,6 +61,7 @@ function Spilcafeen() {
       >
         Go to the top
       </StarBorder>
+      <Footer />
     </>
   );
 }

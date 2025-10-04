@@ -1,0 +1,157 @@
+.spilcafeen-hifi-mascot {
+  padding: 64px 80px 144px 64px;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 766px;
+}
+
+.spilcafeen-hifi-mascot-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1348px;
+}
+
+.spilcafeen-hifi-mascot-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.spilcafeen-hifi-mascot-left {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 240px;
+  width: 569px;
+}
+
+.spilcafeen-hifi-mascot-section {
+  width: 100%;
+}
+
+.spilcafeen-hifi-mascot-section:not(:first-child) {
+  margin-top: 28px;
+}
+
+.spilcafeen-hifi-mascot-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: flex-start;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #a8a29e;
+}
+
+.spilcafeen-hifi-mascot-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 6px 8px;
+  margin: auto 0;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid #a8a29e;
+  min-height: 31px;
+  width: 31px;
+}
+
+.spilcafeen-hifi-mascot-title {
+  align-self: stretch;
+  margin: auto 0;
+  font-size: 18px;
+}
+
+.spilcafeen-hifi-mascot-description {
+  margin-top: 24px;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000000;
+}
+
+.spilcafeen-hifi-mascot-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 56px;
+  width: 100%;
+}
+
+.spilcafeen-hifi-mascot-image-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: stretch;
+  margin: auto 0;
+  min-width: 240px;
+  width: 254px;
+}
+
+.spilcafeen-hifi-mascot-image {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 16px;
+  aspect-ratio: 1.12;
+}
+
+.spilcafeen-hifi-mascot-image-container:last-child .spilcafeen-hifi-mascot-image {
+  aspect-ratio: 1.14;
+  max-width: 100%;
+  width: 313px;
+}
+
+.spilcafeen-hifi-mascot-right {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 240px;
+  width: 358px;
+    border-radius: 16px;
+}
+
+.spilcafeen-hifi-mascot-main-image {
+  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 0.59;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .spilcafeen-hifi-mascot {
+    padding: 20px;
+    padding-bottom: 96px;
+  }
+
+  .spilcafeen-hifi-mascot-content {
+    gap: 20px;
+  }
+
+  .spilcafeen-hifi-mascot-description {
+    font-size: 18px;
+  }
+
+  .spilcafeen-hifi-mascot-images {
+    margin-top: 40px;
+  }
+
+  .spilcafeen-hifi-mascot-left {
+    width: 100%;
+  }
+
+  .spilcafeen-hifi-mascot-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .spilcafeen-hifi-mascot-description {
+    font-size: 16px;
+  }
+
+  .spilcafeen-hifi-mascot-image-container {
+    min-width: 100%;
+  }
+}

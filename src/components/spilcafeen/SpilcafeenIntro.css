@@ -1,0 +1,145 @@
+.spilcafeen-intro {
+  padding: 64px 80px 144px 64px;
+  width: 100%;
+  background-color: #1c1917;
+  min-height: 766px;
+}
+
+.spilcafeen-intro-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1348px;
+}
+
+.spilcafeen-intro-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: flex-start;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #a8a29e;
+}
+
+.spilcafeen-intro-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 6px 12px;
+  margin: auto 0;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid #a8a29e;
+  min-height: 31px;
+  width: 31px;
+}
+
+.spilcafeen-intro-title {
+  align-self: stretch;
+  margin: auto 0;
+  font-size: 18px;
+}
+
+.spilcafeen-intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 64px;
+  width: 100%;
+}
+
+.spilcafeen-intro-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 1.2;
+  color: white;
+  width: 142px;
+}
+
+.spilcafeen-intro-detail-item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+
+.spilcafeen-intro-detail-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.spilcafeen-intro-detail-icon {
+  object-fit: contain;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: auto 0;
+  width: 19px;
+}
+
+.spilcafeen-intro-detail-icon.duration {
+  aspect-ratio: 1.06;
+}
+
+.spilcafeen-intro-detail-icon.team {
+  aspect-ratio: 1;
+}
+
+.spilcafeen-intro-detail-text {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.spilcafeen-intro-logo {
+  object-fit: contain;
+  margin-top: 10px;
+  aspect-ratio: 1.33;
+  width: 65px;
+}
+
+.spilcafeen-intro-description {
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 30px;
+  line-height: 1.33;
+  color: #d6d3d1;
+  width: 933px;
+}
+
+.spilcafeen-intro-challenge {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .spilcafeen-intro {
+    padding: 20px;
+    padding-bottom: 96px;
+    font-size: 18px;
+  }
+
+  .spilcafeen-intro-content {
+    margin-top: 40px;
+  }
+
+  .spilcafeen-intro-description {
+    max-width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .spilcafeen-intro-description {
+    font-size: 18px;
+  }
+  .spilcafeen-intro {
+    margin-top: -48px;
+  }
+}
