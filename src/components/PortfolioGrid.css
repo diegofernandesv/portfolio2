@@ -131,6 +131,16 @@
   min-width: 0;
 }
 
+.portfolio-coming-soon {
+  font-size: clamp(12px, 2.5vw, 16px);
+  font-weight: 400;
+  color: rgba(140, 140, 140, 1);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+
 .portfolio-project-tags {
   display: flex;
   align-items: center;
@@ -171,6 +181,10 @@
     gap: clamp(40px, 6vw, 64px) clamp(32px, 4vw, 44px);
     margin-top: 48px;
   }
+
+  .portfolio-projects-grid.single-result {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   
   .portfolio-project-info {
     gap: clamp(24px, 4vw, 40px);
@@ -195,6 +209,10 @@
   .portfolio-projects-grid {
     grid-template-columns: repeat(auto-fit, minmax(536px, 1fr));
     max-width: 1250px;
+  }
+
+  .portfolio-projects-grid.single-result {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

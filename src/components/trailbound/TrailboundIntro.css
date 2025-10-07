@@ -1,0 +1,293 @@
+.trailbound-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.trailbound-intro-hero {
+  width: 100%;
+}
+
+.trailbound-intro-hero-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3.19;
+  object-fit: contain;
+}
+
+.trailbound-intro-container {
+  padding: 64px 80px 256px 64px;
+  width: 100%;
+  background-color: white;
+  min-height: 766px;
+}
+
+.trailbound-go-back {
+  margin-bottom: 48px;
+}
+
+.trailbound-intro-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1348px;
+}
+
+.trailbound-intro-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  align-self: flex-start;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: #78716c;
+}
+
+.trailbound-intro-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 6px 12px;
+  margin: auto 0;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid #a8a29e;
+  min-height: 31px;
+  width: 31px;
+}
+
+.trailbound-intro-title {
+  align-self: stretch;
+  margin: auto 0;
+  font-size: 18px;
+}
+
+.trailbound-intro-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 64px;
+  width: 100%;
+}
+
+.trailbound-intro-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: center;
+  width: 142px;
+}
+
+.trailbound-intro-detail-item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.2;
+  color: black;
+}
+
+.trailbound-intro-detail-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.trailbound-intro-detail-icon {
+  object-fit: contain;
+  flex-shrink: 0;
+  align-self: stretch;
+  margin: auto 0;
+  aspect-ratio: 1.06;
+  width: 19px;
+}
+
+.trailbound-intro-detail-text {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.trailbound-intro-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #14532d;
+  border-radius: 8px;
+  height: 58px;
+  min-height: 58px;
+  width: 58px;
+}
+
+.trailbound-intro-logo img {
+  object-fit: contain;
+  aspect-ratio: 1.04;
+  width: 29px;
+}
+
+.trailbound-intro-description {
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-size: 30px;
+  line-height: 1.33;
+  color: #0c0a09;
+  width: 933px;
+}
+
+.trailbound-intro-showcase {
+  align-self: center;
+  max-width: 100%;
+  width: 1450px;
+  color: #14532d;
+}
+
+.trailbound-intro-showcase-image {
+  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 1.41;
+}
+
+.trailbound-intro-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.trailbound-intro-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  margin: auto 0;
+  min-height: 733px;
+  min-width: 240px;
+  border-radius: 64px;
+  width: 725px;
+}
+
+.trailbound-intro-card-tone {
+  background-color: #f59e0b;
+  padding: 160px 56px 160px 80px;
+}
+
+.trailbound-intro-card-vision {
+  background-color: #f7fee7;
+  padding: 128px 48px 128px 80px;
+}
+
+.trailbound-intro-card-content {
+  max-width: 100%;
+  width: 600px;
+}
+
+.trailbound-intro-card-section:not(:first-child) {
+  margin-top: 24px;
+}
+
+.trailbound-intro-card-title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.trailbound-intro-card-text {
+  margin-top: 24px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.33;
+}
+
+.trailbound-intro-brand-name {
+  font-weight: 700;
+  color: #2b4b30;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .trailbound-intro-container {
+    padding: 20px;
+    padding-bottom: 96px;
+  }
+
+  .trailbound-go-back {
+    margin-bottom: 32px;
+  }
+
+  .trailbound-intro-main {
+    margin-top: 40px;
+  }
+
+  .trailbound-intro-description {
+    max-width: 100%;
+    font-size: 24px;
+  }
+
+  .trailbound-intro-card {
+    padding: 96px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .trailbound-intro-card-title {
+    font-size: 32px;
+  }
+
+  .trailbound-intro-card-text {
+    font-size: 24px;
+  }
+
+  .trailbound-intro-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trailbound-go-back {
+    margin-bottom: 24px;
+  }
+
+  .trailbound-intro-description {
+    font-size: 18px;
+  }
+
+  .trailbound-intro-card-title {
+    font-size: 18px;
+  }
+
+  .trailbound-intro-card-text {
+    font-size: 18px;
+  }
+
+  .trailbound-intro-detail-text {
+    font-size: 18px;
+  }
+
+  .trailbound-intro-title {
+    font-size: 18px;
+  }
+
+  .trailbound-intro-step {
+    font-size: 18px;
+  }
+
+  .trailbound-intro-card {
+    text-align: center;
+    border-radius: 24px;
+    width: 100%;
+  }
+
+  .trailbound-intro-card-content {
+    width: 100%;
+  }
+}

@@ -30,7 +30,7 @@ function Home() {
     }, []);
 
     return (
-        <>
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             <div className="hero-container">
                 <Hero 
                     onAnimationComplete={handleHeroAnimationComplete} 
@@ -38,15 +38,20 @@ function Home() {
                 />
             </div>
             {showAboutMe && (
-                <div className="after-hero" style={{ marginTop: 0, width: '100%' }}>
-                    <AboutMe />
-                    <SelectedWork />
-                    <HowIWorkSection />
-                    <LifeSection />
-                    <Footer />
+                <div 
+                    className="after-hero" 
+                    style={{ marginTop: 0, width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}
+                >
+                    <div style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column' }}>
+                        <AboutMe />
+                        <SelectedWork />
+                        <HowIWorkSection />
+                        <LifeSection />
+                    </div>
                 </div>
             )}
-        </>
+                <Footer/>
+        </div>
     );
 }
 

@@ -68,6 +68,9 @@
   max-width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 3vw, 22px);
 }
 
 .project-image {
@@ -107,7 +110,6 @@
 
 .project-info {
   display: flex;
-  margin-top: clamp(12px, 3vw, 22px);
   width: 100%;
   max-width: 100%;
   align-items: flex-start;
@@ -127,6 +129,11 @@
   max-width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  min-height: 2.4em; /* Reserve room for two lines for consistent card height */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .project-tags {

@@ -11,6 +11,8 @@ function SelectedWork() {
       navigate("/spilcafeen");
     } else if (projectName === "Naturhistorisk Museum") {
       navigate("/naturhistorisk-museum");
+    } else if (projectName === "Trailbound") {
+      navigate("/trailbound");
     } else if (projectName === "Copenhagen Fashion Week") {
       navigate("/oops-behance");
     }
@@ -61,7 +63,7 @@ function SelectedWork() {
 
       <div className="selected-work-bottom">
         <div className="projects-grid">
-          <div className="project-card">
+          <div className="project-card" onClick={() => handleProjectClick("Trailbound")}>
             <div className="portfolio-image-container">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/be9b66157cf5389a473ef1eae1c08fc512b8aa79?placeholderIfAbsent=true"

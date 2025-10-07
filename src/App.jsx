@@ -8,6 +8,7 @@ import Spilcafeen from "./pages/Spilcafeen";
 import NaturhistoriskMuseum from "./pages/NaturhistoriskMuseum";
 import OopsBehance from "./pages/OopsBehance";
 import OopsBehance1 from "./pages/OopsBehance1";
+import Trailbound from "./pages/Trailbound";
 export default function App() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="naturhistorisk-museum" element={<NaturhistoriskMuseum />} />
         <Route path="oops-behance" element={<OopsBehance />} />
         <Route path="oops-behance1" element={<OopsBehance1 />} />
+        <Route path="trailbound" element={<Trailbound />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
