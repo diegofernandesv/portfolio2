@@ -8,23 +8,16 @@ import LifeSection from "../components/LifeSection";
 import Footer from "../components/Footer";
 
 function Home() {
-    const [showAboutMe, setShowAboutMe] = useState(false);
-    const [heroAnimationsComplete, setHeroAnimationsComplete] = useState(false);
+    const [heroHasCompleted, setHeroHasCompleted] = useState(false);
 
     const handleHeroAnimationComplete = () => {
-        setShowAboutMe(true);
-        setHeroAnimationsComplete(true);
-        
-        // Enable scrolling by adding a class to body
-        document.body.classList.add("scrollable");
+        setHeroHasCompleted(true);
     };
 
     useEffect(() => {
-        // Initially disable scrolling
-        document.body.classList.remove("scrollable");
-        
+        document.body.classList.add("scrollable");
+
         return () => {
-            // Cleanup on unmount
             document.body.classList.remove("scrollable");
         };
     }, []);
@@ -34,22 +27,20 @@ function Home() {
             <div className="hero-container">
                 <Hero 
                     onAnimationComplete={handleHeroAnimationComplete} 
-                    preventRestart={showAboutMe} 
+                    preventRestart={heroHasCompleted} 
                 />
             </div>
-            {showAboutMe && (
-                <div 
-                    className="after-hero" 
-                    style={{ marginTop: 0, width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}
-                >
-                    <div style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column' }}>
-                        <AboutMe />
-                        <SelectedWork />
-                        <HowIWorkSection />
-                        <LifeSection />
-                    </div>
+            <div 
+                className="after-hero" 
+                style={{ marginTop: 0, width: '100%', flex: 1, display: 'flex', flexDirection: 'column' }}
+            >
+                <div style={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column' }}>
+                    <AboutMe />
+                    <SelectedWork />
+                    <HowIWorkSection />
+                    <LifeSection />
                 </div>
-            )}
+            </div>
                 <Footer/>
         </div>
     );
