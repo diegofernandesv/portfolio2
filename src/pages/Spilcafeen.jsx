@@ -11,13 +11,14 @@ import ToggleSection from "../components/ToggleSection";
 import StarBorder from "../components/StarBorder";
 import Footer from "../components/Footer";
 import "./spilcafeen.css";
+import image1 from "../assets/SpilcafeenHeader.png";
 
 function Spilcafeen() {
   return (
     <>
       <ProjectHeader
         title="Spilcafeen"
-        backgroundImage="https://api.builder.io/api/v1/image/assets/TEMP/4f1c92aa42f034d460d41ab1076ef1b5193af873?width=3024"
+        backgroundImage={image1}
         duration="4 weeks"
         team="4 people"
         date="Feb. 2025"

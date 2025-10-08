@@ -68,7 +68,24 @@ function NaturhistoriskMuseum() {
           </>
         }
       />
-        <OtherProjects />
+        <OtherProjects
+          projects={[
+            {
+              to: "/spilcafeen",
+              image:
+                "https://api.builder.io/api/v1/image/assets/e9cac1e18ae64186984fb4d639c633bc/d644e0bdf7def47c98433891c3b748d710a1ddbf?placeholderIfAbsent=true",
+              tag: "UX/UI",
+              name: "Spilcafeen",
+            },
+            {
+              to: "/oops-behance",
+              image:
+                "https://api.builder.io/api/v1/image/assets/aca817ebcbed425ab4227fd20aad7fb8/0eb41618f11099cc313b06a22fd2b487dc0fafaf?placeholderIfAbsent=true",
+              tag: "UX/UI",
+              name: "Copenhagen Fashion Week",
+            },
+          ]}
+        />
         <StarBorder
           as="button"
           className="go-top-fixed"

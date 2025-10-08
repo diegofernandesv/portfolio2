@@ -47,8 +47,11 @@ const AnimatedContent = ({
       scrollTrigger: {
         trigger: el,
         start: `top ${startPct}%`,
-        // Replays when entering from both directions, reverses on leave
-        toggleActions: 'play reverse play reverse',
+        // Keep content visible after first play, but reset when scrolling back above
+        toggleActions: 'play none none none',
+        onLeaveBack: (self) => {
+          self.animation?.reverse();
+        },
         // markers: true, // uncomment to debug
       }
     });
