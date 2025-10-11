@@ -48,3 +48,21 @@
 .naturhistorisk-museum-theme .content-wrapper {
   background-color: var(--secondary-color);
 }
+
+@media (max-width: 480px) {
+  .naturhistorisk-museum-theme {
+    line-height: 1.5;
+  }
+
+  .naturhistorisk-museum-theme * {
+    font-size: 18px !important;
+  }
+
+  .naturhistorisk-museum-theme .intro-section *,
+  .naturhistorisk-museum-theme .research-challenge-section *,
+  .naturhistorisk-museum-theme .concept-experience-section *,
+  .naturhistorisk-museum-theme .lofi-to-hifi-section *,
+  .naturhistorisk-museum-theme .takeaways-container * {
+    font-size: inherit !important;
+  }
+}
