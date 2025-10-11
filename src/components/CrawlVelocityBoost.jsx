@@ -187,14 +187,15 @@ export default function CrawlVelocityBoost() {
       {/* Responsive type bump on phones */}
       <style>{`
         /* Base spacing for readability */
+        .crawl-vb { padding: 0 1rem; box-sizing: border-box; }
         .crawl-vb p { margin: 0 0 1.2rem 0; }
         .crawl-vb p:last-child { margin-bottom: 0; }
 
         @media (max-width: 480px) {
-          .crawl-vb { font-size: 2.8rem; line-height: 2.15; }
-          .crawl-vb h1 { font-size: 2.8rem; }
-          .crawl-vb h2 { font-size: 2.4rem; letter-spacing: .25em; }
-          .crawl-vb p  { font-size: 2.5rem; margin: 0 0 1.8rem 0; }
+          .crawl-vb { font-size: 6.8rem; line-height: 2.55; width: min(82vw, 26em); margin-left: auto; margin-right: auto; padding: 0; }
+          .crawl-vb h1 { font-size: 7.4rem; }
+          .crawl-vb h2 { font-size: 5.6rem; letter-spacing: .2em; }
+          .crawl-vb p  { font-size: 6.3rem; margin: 0 0 2.8rem 0; }
           .crawl-vb p:last-child { margin-bottom: 0; }
         }
       `}</style>
@@ -315,9 +316,9 @@ const styles2 = {
     transformStyle: "preserve-3d",
   },
   crawl: {
-    maxWidth: "28em",
+    width: "min(26em, 82vw)",
     margin: "0 auto",
-    padding: "0 1rem",
+    boxSizing: "border-box",
     lineHeight: 1.7,
     transformOrigin: "50% 100%",
     transform: "rotateX(25deg)",
@@ -326,6 +327,7 @@ const styles2 = {
     fontWeight: 600,
     textTransform: "uppercase",
     textAlign: "justify",
+    overflowWrap: "break-word",
   },
   title: { textAlign: "center", marginBottom: "2rem" },
   h1: { margin: "0 0 1rem 0", fontSize: "2.6rem", letterSpacing: ".05em" },
